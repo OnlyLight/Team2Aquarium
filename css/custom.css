@@ -1,0 +1,135 @@
+/* CSS Document */
+
+.video-background {
+    position: fixed;
+    z-index: -99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video-background {
+        height: 300%;
+        top: -100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video-background {
+        width: 300%;
+        left: -100%;
+    }
+}
+
+.logo img {
+    transform: translateY(0rem);
+}
+
+nav {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), 0 6px 6px rgba(0, 0, 0, 0.6);
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:first-child {
+    padding-left: 0;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: rgb(0, 206, 241);
+}
+
+nav ul li {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+}
+
+nav ul li:first-child {
+    padding-left: 0;
+}
+
+nav ul li:last-child {
+    padding-right: 0;
+}
+
+.timer {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 90%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    padding-right: 0;
+    margin-top: 1rem;
+}
+
+.timer span {
+    padding: .6rem;
+    margin-left: .7rem;
+    float: left;
+}
+
+.timer span:first-child {
+    border-right: solid 1px rgba(255, 255, 255, 0.2);
+    padding-right: .9rem;
+    position: relative;
+}
+
+.timer strong {
+    padding-right: .3rem;
+    padding-left: .3rem;
+}
+
+.timer span:first-child::before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: #00FF06;
+    left: -.6rem;
+    top: .9rem;
+}
+
+.ticket {
+    padding: .5rem 2rem;
+    float: right;
+    background-color: #F95D62;
+    font-weight: bold;
+    color: white;
+    border: .1rem solid #F95D62;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.ticket:hover {
+    text-decoration: none;
+    background-color: white;
+    color: #F95D62;
+}
+
+.search {
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-left: 1.2rem;
+}
+
+.search a {
+    color: white;
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.4);
+}

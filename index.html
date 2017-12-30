@@ -25,7 +25,7 @@
     </header>
     <section class="container-fluid hello">
         <p>DOWNTOWN AQUARIUM</p>
-        <h1>KẾT NỐI<br><i>với</i><br><span>ĐẠI DƯƠNG</span></h1>
+        <h1>KẾT NỐI<br><i>với</i><br><span><i>ĐẠI DƯƠNG</i></span></h1>
     </section>
     <section class="container-fluid intro">
         <h1>section 2</h1>
@@ -33,6 +33,28 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jQuery.scrollSpeed.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        jQuery.scrollSpeed(100, 800);
+        $(document).ready(function(){
+        setInterval(function(){
+            var d = new Date();
+            var h = d.getHours();
+            var m = d.getMinutes();
+            if (h>=8 && h<=20)
+            {
+                 $(".status").text("ĐANG MỞ CỬA");
+                 $(".status").removeClass("offline");
+            }
+            else{
+                $(".status").text("ĐANG ĐÓNG CỬA");
+                $(".status").addClass("offline");
+            }
+        },1000);
+        
+});
+        
+    </script>
 </body>

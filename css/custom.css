@@ -38,7 +38,6 @@ iframe {
 nav {
     font-family: 'Oswald', sans-serif;
     font-size: 1.3em;
-    letter-spacing: 2px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -81,7 +80,6 @@ nav ul li:last-child {
 
 .timer span {
     padding: .6rem;
-    margin-left: .7rem;
     float: left;
 }
 
@@ -132,4 +130,37 @@ nav ul li:last-child {
 .search a {
     color: white;
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.4);
+}
+section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+}
+section.hello {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: white;
+    padding-bottom: 8rem;
+}
+section.hello p{
+    letter-spacing: .7rem;
+}
+section.hello h1{
+    font-size: 300%;
+}
+section.hello span{
+    color: rgb(0, 206, 241);
+    font-size: 250%;
+}
+section.hello::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    content: "";
+    background: linear-gradient(rgba(0, 143, 255,0),rgba(0, 143, 255,0.8));
+}
+section.intro{
+    background-color: rgba(0, 143, 255,0.8);
 }

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Aquarium</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Angular JS -->
+    <script src="js/angular.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700&amp;subset=vietnamese" rel="stylesheet">
+</head>
+
+<body ng-app="">
+    <div class="video-background">
+        <iframe class="backgroud-iframe" src="https://player.vimeo.com/video/223309279?background=1?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe>
+    </div>
+    <header ng-include="'common/header.html'"></header>
+    <section class="container-fluid hello">
+        <p>DOWNTOWN AQUARIUM</p>
+        <h1>KẾT NỐI<br><i>với</i><br><span><i>ĐẠI DƯƠNG</i></span></h1>
+    </section>
+    <section class="container-fluid intro">
+        <h1>section 2</h1>
+    </section>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jQuery.scrollSpeed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        jQuery.scrollSpeed(100, 800);
+        $(document).ready(function(){
+        setInterval(function(){
+            var d = new Date();
+            var h = d.getHours();
+            var m = d.getMinutes();
+            if (h>=8 && h<=20)
+            {
+                 $(".status").text("ĐANG MỞ CỬA");
+                 $(".status").removeClass("offline");
+            }
+            else{
+                $(".status").text("ĐANG ĐÓNG CỬA");
+                $(".status").addClass("offline");
+            }
+        },1000);
+        
+});
+        
+    </script>
+</body>

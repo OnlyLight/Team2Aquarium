@@ -1,0 +1,172 @@
+img {
+    width: 100%;
+}
+
+.headers {
+    background-color: #448892;
+}
+
+.blue {
+    color: #448892;
+}
+
+#mes {
+    height: 150px;
+}
+
+.btn-submit {
+    width: 150px;
+    background-color: #448892;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #ff9900;
+    border: 1px solid #ff9900;
+    color: #fff;
+    transition: all 0.25s;
+}
+
+.info-contact {
+    font-weight: bold;
+}
+
+.contact-heading {
+    border-bottom: 2px solid #eaeaea;
+    line-height: 48px;
+}
+
+.contact-heading-title {
+    border-bottom: 2px solid green;
+}
+
+.block-sidebar {
+    border: 1px solid #eaeaea;
+    margin-bottom: 5%;
+}
+
+.title-sidebar {
+    padding-left: 12%;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #448892;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: #448892;
+    color: white !important;
+}
+
+.content-sidebar {
+    width: 260px;
+    padding: 9px 13px 7px 7px;
+}
+
+.thumbnail {
+    border: none;
+}
+
+.img-news {
+    height: 2%;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+.link-news:hover {
+    color: #448892;
+    text-decoration: none;
+}
+
+.news-intro {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.news-block {
+    margin-top: 2%;
+}
+
+.thumbnail>img {
+    height: 160px;
+}
+
+.magin-header {
+    margin-top: 60px;
+}
+
+.magin-content {
+    margin-top: 25px;
+}
+
+.social ul {
+    list-style-type: none;
+    font-size: 13px;
+    margin-top: 15px;
+    padding-left: 0;
+    color: #7F8C8D;
+}
+
+.social ul li {
+    display: inline-block;
+    background: none repeat scroll 0 0 #B5B5B5;
+    border: 2px solid #B5B5B5;
+    border-radius: 50%;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 8px 0 0;
+    padding: 0;
+    text-align: center;
+    width: 36px;
+    transition: all 0.8s ease 0s;
+}
+
+.social ul li:hover {
+    border: 2px solid #2c3e50;
+    background: #2c3e50;
+    transform: scale(1.15) rotate(360deg);
+}
+
+#facebook:hover {
+    border: 2px solid #46629e;
+    background: #47639d;
+    transform: scale(1.15) rotate(360deg);
+}
+
+#gg:hover {
+    border: 2px solid #dc4c41;
+    background: #dc4c41;
+    transform: scale(1.15) rotate(360deg);
+}
+
+#twitter:hover {
+    border: 2px solid #32cdfd;
+    background: #32cdfd;
+}
+
+#youtube:hover {
+    border: 2px solid #ee1c1b;
+    background: #ee1c1b;
+}
+
+.social ul li a {
+    color: #78828d;
+    padding: 0 0 5px 0;
+    display: block;
+}
+
+.social ul li a i {
+    font-size: 16px;
+    margin: 0 0 0 5px;
+    color: #EDEFF1 !important;
+}
+
+.tree-action {
+    list-style-type: none;
+}
+
+.layer-action-content {
+    margin-top: 7%;
+    margin-left: -25px;
+}

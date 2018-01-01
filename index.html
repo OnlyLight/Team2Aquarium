@@ -9,7 +9,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/animations.css">
     <!-- Angular JS -->
     <script src="js/angular.min.js"></script>
     <!-- Font Awesome -->
@@ -44,11 +43,22 @@
             </div>
         </div>
     </section>
+    <section class="container-fluid intro" style="background-color: rgba(14,50,72,0.75);">
+        <div class="row">
+            <div class="col-md-6 content pt-lg-4 pt-0">
+                <h2>TÌM HIỂU <small><i>và</i></small><br>KHÁM PHÁ</h2>
+                <p>Downtown Aquarium giúp bạn gần hơn với môi trường sinh vật biển đa dạng và phong phú với hàng nghìn loài từ khắp thế giới.</p>
+                <a href="#" class="btn mt-3">KHÁM PHÁ NGAY</a>
+            </div>
+            <div class="col-md-6">
+                <img class="img-fluid" src="images/intro-explore.jpg" alt="Intro Explore">
+            </div>
+        </div>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jQuery.scrollSpeed.js"></script>
-    <script src='js/css3-animate-it.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
@@ -57,7 +67,6 @@
         setInterval(function() {
             var d = new Date();
             var h = d.getHours();
-            var m = d.getMinutes();
             if (h >= 8 && h <= 20) {
                 $(".status").text("ĐANG MỞ CỬA");
                 $(".status").removeClass("offline");
@@ -67,12 +76,12 @@
             }
         }, 1000);
         $(window).scroll(function() {
-    if ($(document).scrollTop() > 50) {
-      $("header").addClass("scroll-down");
-    } else {
-      $("header").removeClass("scroll-down");
-    }
-  });
+            if ($(document).scrollTop() > 50) {
+                $("header").addClass("scroll-down");
+            } else {
+                $("header").removeClass("scroll-down");
+            }
+        });
     });
     </script>
 </body>

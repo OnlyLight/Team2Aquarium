@@ -52,18 +52,18 @@ nav {
     font-size: 1.3em;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+nav .navbar-nav .nav-link {
     color: white;
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), 0 6px 6px rgba(0, 0, 0, 0.6);
     transition: color 0.3s;
 }
 
-.navbar-dark .navbar-nav .nav-link:first-child {
+nav .navbar-nav .nav-link:first-child {
     padding-left: 0;
 }
-.navbar-dark .navbar-nav .active>.nav-link,
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:focus {
+nav .navbar-nav .active>.nav-link,
+nav .navbar-nav .nav-link:hover,
+nav .navbar-nav .nav-link:focus {
     color: rgb(0, 206, 241);
 }
 
@@ -154,7 +154,6 @@ section.hello {
     text-align: center;
     color: white;
     padding-top: 5rem;
-    padding-bottom: 3rem;
 }
 section.hello p{
     letter-spacing: .7rem;
@@ -207,8 +206,7 @@ section.hello::after{
 
 section.intro{
     background-color: rgba(0, 143, 255,0.8);
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding: 8rem 5rem;
 }
 section.intro img{
     box-shadow: 0 0px 20px rgba(0,0,0,0.79), 0 4px 6px rgba(0,0,0,0.63);
@@ -219,8 +217,18 @@ section.intro .content{
     font-weight: bold;
     font-size: 150%;
 }
-section.intro .content h1{
+section.intro .content h1,h2{
     font-weight: bold;
     margin-bottom: 2rem;
     font-size: 200%;
+}
+section.intro .content a{
+    background-color: rgb(0, 143, 255);
+    color: white;
+    border-radius: 40px!important;
+    transition: all .3s;
+}
+section.intro .content a:hover{
+    color: rgb(0, 143, 255);
+    background-color: white;
 }

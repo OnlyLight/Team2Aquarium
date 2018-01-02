@@ -148,6 +148,7 @@ section {
     padding-top: 3rem;
     padding-bottom: 3rem;
     position: relative;
+    overflow: hidden;
 }
 section.hello {
     font-family: 'Oswald', sans-serif;

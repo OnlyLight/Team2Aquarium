@@ -232,3 +232,23 @@ section.intro .content a:hover{
     color: rgb(0, 143, 255);
     background-color: white;
 }
+section#stats{
+    background: url('../images/background-numbSec.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    
+}
+section#stats span{
+    font-size: 300%;
+    font-weight: bold;
+}
+section#stats h5{
+    border-bottom: #ffc203 1px solid;
+    padding-bottom: 2rem;
+}
+section#stats p{
+    padding-top: 1rem;
+    line-height: 2rem;
+
+}

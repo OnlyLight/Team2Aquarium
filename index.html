@@ -55,10 +55,32 @@
             </div>
         </div>
     </section>
+    <section class="container-fluid intro" id="stats">
+        <div class="row">
+            <div class="col-md-11" style="background-color: rgba(0, 143, 255,0.8);">
+                <div class="row py-5">
+                    <div class="col-md-4">
+                        <h5><span class="counter" data-counter-time="2000" data-counter-delay="10">21</span><br>NĂM HOẠT ĐỘNG</h5>
+                        <p class="px-md-2 px-lg-4">Aquarium chúng tôi đã giáo dục cho hơn 1,5 triệu học sinh và giải cứu hàng trăm loài động vật kể từ khi thành lập đến nay.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5><span class="counter" data-counter-time="2000" data-counter-delay="10">7000</span><br>LOÀI ĐỘNG, THỰC VẬT</h5>
+                        <p class="px-md-2 px-lg-4">Chúng tôi quan tâm sâu sắc tới môi trường biển mà mong rằng các bạn cũng sẽ kết nối cùng với chúng tôi.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5><span class="counter" data-counter-time="2000" data-counter-delay="10">300</span><br>SỰ KIỆN ĐƯỢC TỔ CHỨC MỖI NĂM</h5>
+                        <p class="px-md-2 px-lg-4">Downtown Aquarium là nơi hoàn hảo cho sự kiện tiếp theo của bạn. Hãy đến với chúng tôi để cảm nhận sự khác biệt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jQuery.scrollSpeed.js"></script>
+    <script src="js/jquery.countup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
@@ -82,6 +104,7 @@
                 $("header").removeClass("scroll-down");
             }
         });
+        $('.counter').countUp();
     });
     </script>
 </body>

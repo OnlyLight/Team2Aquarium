@@ -684,6 +684,7 @@
 
 .fadeInUp {
   animation-name: fadeInUp;
+  animation-delay: .5s;
 }
 
 @keyframes fadeInUpBig {

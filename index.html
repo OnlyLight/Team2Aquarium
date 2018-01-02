@@ -36,9 +36,9 @@
     <section class="container-fluid intro" id="intro">
         <div class="row">
             <div class="col-md-6">
-                <img class="img-fluid" src="images/intro.jpg" alt="Intro AQUARIUM">
+                <img class="img-fluid animated" src="images/intro.jpg" alt="Intro AQUARIUM">
             </div>
-            <div class="col-md-6 content pt-lg-4 pt-0">
+            <div class="col-md-6 content pt-lg-4 pt-0 animated">
                 <h1>DOWNTOWN AQUARIUM</h1>
                 <p>Nhiệm vụ của chúng tôi là đem lại sự giải trí, giáo dục, truyền cảm hứng cho việc quản lý môi trường tự nhiên.</p>
             </div>
@@ -46,19 +46,19 @@
     </section>
     <section class="container-fluid intro" style="background-color: rgba(14,50,72,0.75);" id="explore">
         <div class="row">
-            <div class="col-md-6 content pt-lg-4 pt-0">
+            <div class="col-md-6 content pt-lg-4 pt-0 animated">
                 <h2>TÌM HIỂU <small><i>và</i></small><br>KHÁM PHÁ</h2>
                 <p>Downtown Aquarium giúp bạn gần hơn với môi trường sinh vật biển đa dạng và phong phú với hàng nghìn loài từ khắp thế giới.</p>
                 <a href="#" class="btn mt-3">KHÁM PHÁ NGAY</a>
             </div>
             <div class="col-md-6">
-                <img class="img-fluid" src="images/intro-explore.jpg" alt="Intro Explore">
+                <img class="img-fluid animated" src="images/intro-explore.jpg" alt="Intro Explore">
             </div>
         </div>
     </section>
     <section class="container-fluid intro" id="stats">
         <div class="row">
-            <div class="col-md-11" style="background-color: rgba(0, 143, 255,0.8);">
+            <div class="col-md-11 animated" style="background-color: rgba(0, 143, 255,0.8);">
                 <div class="row py-5">
                     <div class="col-md-4">
                         <h5><span class="counter" data-counter-time="2000" data-counter-delay="10">21</span><br>NĂM HOẠT ĐỘNG</h5>
@@ -107,21 +107,22 @@
         });
         $('.counter').countUp();
         var waypoints = $('#intro').waypoint(function(direction) {
-            $('#intro img').addClass("animated");
             $('#intro img').addClass("bounceInLeft");
-            $('#intro .content').addClass("animated");
             $('#intro .content').addClass("bounceInRight");
         }, {
-            offset: '90%'
-        })
+            offset: '95%'
+        });
         var waypoints2 = $('#explore').waypoint(function(direction) {
-            $('#explore img').addClass("animated");
             $('#explore img').addClass("bounceInRight");
-            $('#explore .content').addClass("animated");
             $('#explore .content').addClass("bounceInLeft");
         }, {
-            offset: '90%'
-        })
+            offset: '95%'
+        });
+        var waypoints3 = $('#stats').waypoint(function(direction) {
+            $('#stats animated').addClass("fadeInUp");
+        }, {
+            offset: '95%'
+        });
     });
     </script>
 </body>

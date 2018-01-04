@@ -92,8 +92,8 @@
         </div>
     </section>
     <section class="container-fluid" id="news" style="background-color: rgba(14,50,72,0.75);">
-        <h1 class="text-center p-lg-3">TIN TỨC MỚI NHẤT</h1>
-        <div class="row justify-content-center my-lg-4">
+        <h1 class="text-center p-lg-3 animated">TIN TỨC MỚI NHẤT</h1>
+        <div class="row justify-content-center my-lg-4 animated">
             <div class="col-md-4 p-0" style="background: url('../images/news-image1.jpg') no-repeat center; background-size: cover; z-index: 1">
             </div>
             <div class="col-md-4 news-content p-lg-5">
@@ -101,7 +101,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
             </div>
         </div>
-        <div class="row justify-content-center my-lg-4">
+        <div class="row justify-content-center my-lg-4 animated">
             <div class="col-md-4 p-0" style="background: url('../images/news-image2.jpg') no-repeat center; background-size: cover; z-index: 1">
             </div>
             <div class="col-md-4 news-content p-lg-5">
@@ -109,7 +109,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
             </div>
         </div>
-        <div class="row justify-content-center my-lg-4">
+        <div class="row justify-content-center my-lg-4 animated">
             <div class="col-md-4 p-0" style="background: url('../images/news-image3.jpg') no-repeat center; background-size: cover; z-index: 1">
             </div>
             <div class="col-md-4 news-content p-lg-5">
@@ -170,6 +170,11 @@
             $('#mission .animated').addClass("fadeInLeft");
         }, {
             offset: '85%'
+        });
+        var waypoints5 = $('#news').waypoint(function(direction) {
+            $('#news .animated').addClass("fadeIn");
+        }, {
+            offset: '87%'
         });
     });
     </script>

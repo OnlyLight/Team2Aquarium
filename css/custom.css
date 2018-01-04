@@ -1,5 +1,4 @@
 /* CSS Document */
-
 .video-background {
     position: fixed;
     z-index: -99;
@@ -213,7 +212,7 @@ section.intro img{
     box-shadow: 0 0px 20px rgba(0,0,0,0.79), 0 4px 6px rgba(0,0,0,0.63);
 }
 section.intro .content{
-    color: rgba(255, 255, 255, .9);
+    color: rgba(255, 255, 255, 1);
     padding: 0 3rem 0 3rem;
     font-weight: bold;
     font-size: 150%;
@@ -251,5 +250,54 @@ section#stats h5{
 section#stats p{
     padding-top: 1rem;
     line-height: 2rem;
-
+}
+section#mission .content{
+    background-color: rgba(115,207,255,0.9);
+    position: relative;
+}
+section#mission img{
+    position: absolute;
+    left:  93%;
+    width: 80%;
+}
+section#mission::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    content: "";
+    background: linear-gradient(rgba(0, 143, 255,0),rgba(14,50,72,0.75));
+}
+section#news{
+    color: white;
+    font-weight: bold;
+    padding: 5rem;
+}
+section#news .news-content a{
+    color: white;
+    transition: color .3s;
+}
+section#news .news-content a:hover{
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
+}
+section#news h1{
+    font-family: 'Oswald', sans-serif;
+}
+section#news .news-content{
+    background-color: #008FFF;
+    z-index: 0;
+}
+section .news-content p{font-weight:normal;}
+section#news h4 a{
+    font-weight: bold;
+    background-color: rgb(0, 143, 255);
+    color: white;
+    border-radius: 40px!important;
+    transition: all .3s;
+}
+section#news h4 a:hover{
+    color: rgb(0, 143, 255);
+    background-color: white;
 }

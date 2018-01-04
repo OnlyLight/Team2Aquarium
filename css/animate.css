@@ -398,7 +398,7 @@
 
 .bounceInLeft {
   animation-name: bounceInLeft;
-  animation-delay: .5s;
+  animation-delay: .3s;
 }
 
 @keyframes bounceInRight {
@@ -431,7 +431,7 @@
 
 .bounceInRight {
   animation-name: bounceInRight;
-  animation-delay: .5s;
+  animation-delay: .3s;
 }
 
 @keyframes bounceInUp {
@@ -684,7 +684,7 @@
 
 .fadeInUp {
   animation-name: fadeInUp;
-  animation-delay: .5s;
+  animation-delay: .3s;
 }
 
 @keyframes fadeInUpBig {

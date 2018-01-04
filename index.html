@@ -76,6 +76,49 @@
             </div>
         </div>
     </section>
+    <section class="container-fluid intro" id="mission" style="background-color: transparent;">
+        <div class="row">
+            <div class="col-md-7 content p-lg-5 pl-0 pt-0 animated">
+                <img class="animated" src="images/mission-sec.png" alt="Intro Mission">
+                <h2>TẠO RA SỰ <br>THAY ĐỔI TÍCH CỰC <br>CHO MÔI TRƯỜNG <br>TỰ NHIÊN</h2>
+                <p>Downtown Aquarium tích cực tham gia và thúc đẩy việc quản lý môi trường tự nhiên như là một phần trong sứ mệnh bảo tồn của chúng ta.</p>
+                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid" id="news" style="background-color: rgba(14,50,72,0.75);">
+        <h1 class="text-center p-lg-3">TIN TỨC MỚI NHẤT</h1>
+        <div class="row justify-content-center my-lg-4">
+            <div class="col-md-4 p-0" style="background: url('../images/news-image1.jpg') no-repeat center; background-size: cover; z-index: 1">
+            </div>
+            <div class="col-md-4 news-content p-lg-5">
+                <h3 class="pb-lg-2"><a href="#">Cứu hộ động vật: Những bệnh nhân đầu tiên của mùa lạnh..</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+            </div>
+        </div>
+        <div class="row justify-content-center my-lg-4">
+            <div class="col-md-4 p-0" style="background: url('../images/news-image2.jpg') no-repeat center; background-size: cover; z-index: 1">
+            </div>
+            <div class="col-md-4 news-content p-lg-5">
+                <h3 class="pb-lg-2"><a href="#">Bạn hỏi tôi trả lời: Cá mập có tạo tiếng động không?</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+            </div>
+        </div>
+        <div class="row justify-content-center my-lg-4">
+            <div class="col-md-4 p-0" style="background: url('../images/news-image3.jpg') no-repeat center; background-size: cover; z-index: 1">
+            </div>
+            <div class="col-md-4 news-content p-lg-5">
+                <h3 class="pb-lg-2"><a href="#">Cập nhật loài mới: Cá Bọ Cạp san hô</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+            </div>
+        </div>
+        <h4 class="text-center mt-lg-4"><a href="#" class="btn px-5 py-2">XEM THÊM</a></h4>
+    </section>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -119,9 +162,14 @@
             offset: '85%'
         });
         var waypoints3 = $('#stats').waypoint(function(direction) {
-            $('#stats animated').addClass("fadeInUp");
+            $('#stats .animated').addClass("fadeInUp");
         }, {
-            offset: '80%'
+            offset: '85%'
+        });
+        var waypoints4 = $('#mission').waypoint(function(direction) {
+            $('#mission .animated').addClass("fadeInLeft");
+        }, {
+            offset: '85%'
         });
     });
     </script>

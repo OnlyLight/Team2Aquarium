@@ -62,7 +62,7 @@
                         <input type="text" class="form-control" id="mes">
                     </div>
 
-                    <button class="btn btn-success btn-submit">Submit
+                    <button class="btn btn-1e">Submit
                         <i class="glyphicon glyphicon glyphicon-ok"></i>
                     </button>
                 </form>
@@ -116,5 +116,23 @@
         </div>
     </div>
     <!---->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jQuery.scrollSpeed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        jQuery.scrollSpeed(100, 800);
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $("header").addClass("scroll-down");
+                } else {
+                    $("header").removeClass("scroll-down");
+                }
+            });
+        });
+    </script>
 </body>
 </html>

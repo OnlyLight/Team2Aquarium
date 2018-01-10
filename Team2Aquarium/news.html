@@ -87,13 +87,15 @@
                         </div>
 
                         <div class="col-lg-9">
-                            <h3><a class="link-news" href="#">Build an Insect Hotel for the Inhabitants of the Aquarium</a></h3>
+                            <h3><a class="link-news" href="#">
+                                Xây dựng một khách sạn Insect cho người dân của Aquarium</a></h3>
 
-                            <span class="date"><i class="fa fa-calendar"></i> August 3, 2016 AT 2:10 PM </span><br><br>
+                            <span class="date"><i class="fa fa-calendar"></i> August 3, 2017 AT 2:10 PM </span><br><br>
 
                             <p class="news-intro">Children between the ages of 10 and 12 can build a hotel for our nimble arthropods under the guidance of a school guide.
+                                <br> &nbsp;
                             </p>
-                            <button class="btn btn-submit">Đọc thêm</button>
+                            <button class="btn btn-1e">Đọc thêm</button>
                         </div>
                     </div>
                     <hr>
@@ -106,13 +108,13 @@
                         </div>
 
                         <div class="col-lg-9">
-                            <h3><a class="link-news" href="#">Build Your Own Insect Hotel!</a></h3>
+                            <h3><a class="link-news" href="#">Xây dựng Khách sạn Insect riêng!</a></h3>
 
-                            <span class="date"><i class="fa fa-calendar"></i> August 2, 2016 AT 5:53 PM </span><br><br>
+                            <span class="date"><i class="fa fa-calendar"></i> August 2, 2017 AT 5:53 PM </span><br><br>
 
-                            <p class="news-intro">Exciting Easter programme at Aquarium Berlin
+                            <p class="news-intro">Exciting Easter programme at Aquarium Berlin <br> &nbsp; <br> &nbsp;
                             </p>
-                            <button class="btn btn-submit">Đọc thêm</button>
+                            <button class="btn btn-1e">Đọc thêm</button>
                         </div>
                     </div>
                     <hr>
@@ -125,13 +127,15 @@
                         </div>
 
                         <div class="col-lg-9">
-                            <h3><a class="link-news" href="#">Build an Insect Hotel for the Inhabitants of the Aquarium</a></h3>
+                            <h3><a class="link-news" href="#">
+                                Xây dựng một khách sạn Insect cho người dân của Aquarium</a></h3>
 
-                            <span class="date"><i class="fa fa-calendar"></i> August 4, 2016 AT 1:30 PM </span><br><br>
+                            <span class="date"><i class="fa fa-calendar"></i> August 4, 2017 AT 1:30 PM </span><br><br>
 
                             <p class="news-intro">We work closely with the IZW to ensure the preservation of the tuatara.
+                                <br> &nbsp; <br> &nbsp;
                             </p>
-                            <button class="btn btn-submit">Đọc thêm</button>
+                            <button class="btn btn-1e">Đọc thêm</button>
                         </div>
                     </div>
                     <hr>
@@ -147,5 +151,23 @@
             </div>
         </div>
     </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jQuery.scrollSpeed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        jQuery.scrollSpeed(100, 800);
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $("header").addClass("scroll-down");
+                } else {
+                    $("header").removeClass("scroll-down");
+                }
+            });
+        });
+    </script>
 </body>
 </html>

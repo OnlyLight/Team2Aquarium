@@ -1,7 +1,3 @@
-img {
-    width: 100%;
-}
-
 .headers {
     background-color: #448892;
 }
@@ -12,19 +8,6 @@ img {
 
 #mes {
     height: 150px;
-}
-
-.btn-submit {
-    width: 150px;
-    background-color: #448892;
-    color: white;
-}
-
-.btn-submit:hover {
-    background-color: #ff9900;
-    border: 1px solid #ff9900;
-    color: #fff;
-    transition: all 0.25s;
 }
 
 .info-contact {
@@ -86,9 +69,11 @@ a {
 
 .news-block {
     margin-top: 2%;
+    margin-bottom: 5%;
 }
 
 .thumbnail>img {
+    width: 100%;
     height: 160px;
 }
 
@@ -169,4 +154,63 @@ a {
 .layer-action-content {
     margin-top: 7%;
     margin-left: -25px;
+}
+
+/* Button 1e */
+.btn-1e {
+    overflow: hidden;
+}
+
+.btn-1e:after {
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background: #448892;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.btn-1e:hover,
+.btn-1e:active {
+    color: white;
+}
+
+.btn-1e:hover:after {
+    height: 260%;
+    opacity: 1;
+}
+
+.btn-1e:active:after {
+    height: 400%;
+    opacity: 1;
+}
+
+/* General button style (reset) */
+.btn {
+    font-family: inherit;
+    font-size: inherit;
+    color: #666;
+    background: none;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
 }

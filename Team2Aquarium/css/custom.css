@@ -1,5 +1,4 @@
 /* CSS Document */
-
 .video-background {
     position: fixed;
     z-index: -99;
@@ -9,7 +8,7 @@
     height: 100%;
 }
 
-.backgroud-iframe {
+.background-iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -30,29 +29,40 @@
         left: -100%;
     }
 }
-
-.logo img {
-    transform: translateY(0rem);
+header{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    transition: all 0.5s;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.5);
+    padding-bottom: 10px;
+    padding-top: 20px;
 }
-
+.scroll-down{
+    background-color: rgba(68, 136, 146, .6);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.scroll-down:hover{
+    background-color: rgba(68, 136, 146, .9);
+}
 nav {
     font-family: 'Oswald', sans-serif;
     font-size: 1.3em;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+nav .navbar-nav .nav-link {
     color: white;
     text-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), 0 6px 6px rgba(0, 0, 0, 0.6);
     transition: color 0.3s;
 }
 
-.navbar-dark .navbar-nav .nav-link:first-child {
+nav .navbar-nav .nav-link:first-child {
     padding-left: 0;
 }
-
-.navbar-dark .navbar-nav .active>.nav-link,
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:focus {
+nav .navbar-nav .active>.nav-link,
+nav .navbar-nav .nav-link:hover,
+nav .navbar-nav .nav-link:focus {
     color: rgb(0, 206, 241);
 }
 
@@ -76,13 +86,14 @@ nav ul li:last-child {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     padding-right: 0;
     margin-top: 1rem;
+    transition: all 0.5s;
 }
 
 .timer span {
     padding: .6rem;
     float: left;
 }
-.timer span:first-child {
+.timer .status {
     border-right: solid 1px rgba(255, 255, 255, 0.2);
     padding-right: .9rem;
     position: relative;
@@ -136,12 +147,13 @@ section {
     padding-top: 3rem;
     padding-bottom: 3rem;
     position: relative;
+    overflow: hidden;
 }
 section.hello {
     font-family: 'Oswald', sans-serif;
     text-align: center;
     color: white;
-    padding-bottom: 8rem;
+    padding-top: 5rem;
 }
 section.hello p{
     letter-spacing: .7rem;
@@ -158,10 +170,134 @@ section.hello::after{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 30%;
+    height: 50%;
     content: "";
     background: linear-gradient(rgba(0, 143, 255,0),rgba(0, 143, 255,0.8));
 }
+.scroll-effect{
+    margin-top: 2rem;
+    position: relative;
+    z-index: 2;
+}
+.scroll-effect div{
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    border: 2px solid white;
+    background-color: transparent;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    opacity: 0;
+}
+@keyframes fadedot {
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0;}
+}
+.scroll-effect div:nth-child(1){
+    animation: fadedot 2.5s 1.7s ease-in-out infinite;
+}
+.scroll-effect div:nth-child(2){
+    animation: fadedot 2.5s 2s ease-in-out infinite;
+}
+.scroll-effect div:nth-child(3){
+    animation: fadedot 2.5s 2.5s ease-in-out infinite;
+}
+
 section.intro{
     background-color: rgba(0, 143, 255,0.8);
+    padding: 8rem 5rem;
+}
+section.intro img{
+    box-shadow: 0 0px 20px rgba(0,0,0,0.79), 0 4px 6px rgba(0,0,0,0.63);
+}
+section.intro .content{
+    color: rgba(255, 255, 255, 1);
+    padding: 0 3rem 0 3rem;
+    font-weight: bold;
+    font-size: 150%;
+}
+section.intro .content h1,h2{
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 200%;
+}
+section.intro .content a{
+    background-color: rgb(0, 143, 255);
+    color: white;
+    border-radius: 40px!important;
+    transition: all .3s;
+}
+section.intro .content a:hover{
+    color: rgb(0, 143, 255);
+    background-color: white;
+}
+section#stats{
+    background: url('../images/background-numbSec.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+
+}
+section#stats span{
+    font-size: 300%;
+    font-weight: bold;
+}
+section#stats h5{
+    border-bottom: #ffc203 1px solid;
+    padding-bottom: 2rem;
+}
+section#stats p{
+    padding-top: 1rem;
+    line-height: 2rem;
+}
+section#mission .content{
+    background-color: rgba(115,207,255,0.9);
+    position: relative;
+}
+section#mission img{
+    position: absolute;
+    left:  93%;
+    width: 80%;
+}
+section#mission::before{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    content: "";
+    background: linear-gradient(rgba(0, 143, 255,0),rgba(14,50,72,0.75));
+}
+section#news{
+    color: white;
+    font-weight: bold;
+    padding: 5rem;
+}
+section#news .news-content a{
+    color: white;
+    transition: color .3s;
+}
+section#news .news-content a:hover{
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
+}
+section#news h1{
+    font-family: 'Oswald', sans-serif;
+}
+section#news .news-content{
+    background-color: #008FFF;
+    z-index: 0;
+}
+section .news-content p{font-weight:normal;}
+section#news h4 a{
+    font-weight: bold;
+    background-color: rgb(0, 143, 255);
+    color: white;
+    border-radius: 40px!important;
+    transition: all .3s;
+}
+section#news h4 a:hover{
+    color: rgb(0, 143, 255);
+    background-color: white;
 }

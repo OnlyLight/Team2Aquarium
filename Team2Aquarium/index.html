@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
     <!-- Angular JS -->
@@ -18,42 +19,163 @@
 </head>
 
 <body ng-app="">
-    <div class="video-background">
-        <iframe class="backgroud-iframe" src="https://player.vimeo.com/video/223309279?background=1?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe>
+<div class="video-background">
+    <iframe class="background-iframe" src="https://player.vimeo.com/video/223309279?background=1?autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen></iframe>
+</div>
+<header ng-include="'common/header.html'">
+</header>
+<section class="container-fluid hello">
+    <p class="pb-2">DOWNTOWN AQUARIUM</p>
+    <h1>KẾT NỐI<br><i>với</i><br><span><i>ĐẠI DƯƠNG</i></span></h1>
+    <div class="scroll-effect">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
-    <header ng-include="'common/header.html'"></header>
-    <section class="container-fluid hello">
-        <p>DOWNTOWN AQUARIUM</p>
-        <h1>KẾT NỐI<br><i>với</i><br><span><i>ĐẠI DƯƠNG</i></span></h1>
-    </section>
-    <section class="container-fluid intro">
-        <h1>section 2</h1>
-    </section>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jQuery.scrollSpeed.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-        jQuery.scrollSpeed(100, 800);
-        $(document).ready(function(){
-        setInterval(function(){
+</section>
+<section class="container-fluid intro" id="intro">
+    <div class="row">
+        <div class="col-md-6">
+            <img class="img-fluid animated" src="images/intro.jpg" alt="Intro AQUARIUM">
+        </div>
+        <div class="col-md-6 content pt-lg-4 pt-0 animated">
+            <h1>DOWNTOWN AQUARIUM</h1>
+            <p>Nhiệm vụ của chúng tôi là đem lại sự giải trí, giáo dục, truyền cảm hứng cho việc quản lý môi trường tự nhiên.</p>
+        </div>
+    </div>
+</section>
+<section class="container-fluid intro" style="background-color: rgba(14,50,72,0.75);" id="explore">
+    <div class="row">
+        <div class="col-md-6 content pt-lg-4 pt-0 animated">
+            <h2>TÌM HIỂU <small><i>và</i></small><br>KHÁM PHÁ</h2>
+            <p>Downtown Aquarium giúp bạn gần hơn với môi trường sinh vật biển đa dạng và phong phú với hàng nghìn loài từ khắp thế giới.</p>
+            <a href="#" class="btn mt-3">KHÁM PHÁ NGAY</a>
+        </div>
+        <div class="col-md-6">
+            <img class="img-fluid animated" src="images/intro-explore.jpg" alt="Intro Explore">
+        </div>
+    </div>
+</section>
+<section class="container-fluid intro" id="stats">
+    <div class="row">
+        <div class="col-md-11 animated" style="background-color: rgba(0, 143, 255,0.8);">
+            <div class="row py-5">
+                <div class="col-md-4">
+                    <h5><span class="counter" data-counter-time="2000" data-counter-delay="10">21</span><br>NĂM HOẠT ĐỘNG</h5>
+                    <p class="px-md-2 px-lg-4">Aquarium chúng tôi đã giáo dục cho hơn 1,5 triệu học sinh và giải cứu hàng trăm loài động vật kể từ khi thành lập đến nay.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5><span class="counter" data-counter-time="2000" data-counter-delay="10">7000</span><br>LOÀI ĐỘNG, THỰC VẬT</h5>
+                    <p class="px-md-2 px-lg-4">Chúng tôi quan tâm sâu sắc tới môi trường biển và mong rằng các bạn cũng sẽ kết nối cùng với chúng tôi.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5><span class="counter" data-counter-time="2000" data-counter-delay="10">300</span><br>SỰ KIỆN ĐƯỢC TỔ CHỨC MỖI NĂM</h5>
+                    <p class="px-md-2 px-lg-4">Downtown Aquarium là nơi hoàn hảo cho sự kiện tiếp theo của bạn. Hãy đến với chúng tôi để cảm nhận sự khác biệt.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container-fluid intro" id="mission" style="background-color: transparent;">
+    <div class="row">
+        <div class="col-md-7 content p-lg-5 pl-0 pt-0 animated">
+            <img class="animated" src="images/mission-sec.png" alt="Intro Mission">
+            <h2>TẠO RA SỰ <br>THAY ĐỔI TÍCH CỰC <br>CHO MÔI TRƯỜNG <br>TỰ NHIÊN</h2>
+            <p>Downtown Aquarium tích cực tham gia và thúc đẩy việc quản lý môi trường tự nhiên như là một phần trong sứ mệnh bảo tồn của chúng ta.</p>
+            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small>
+        </div>
+    </div>
+</section>
+<section class="container-fluid" id="news" style="background-color: rgba(14,50,72,0.75);">
+    <h1 class="text-center p-lg-3 animated">TIN TỨC MỚI NHẤT</h1>
+    <div class="row justify-content-center my-lg-4 animated">
+        <div class="col-md-4 p-0" style="background: url('../images/news-image1.jpg') no-repeat center; background-size: cover; z-index: 1">
+        </div>
+        <div class="col-md-4 news-content p-lg-5">
+            <h3 class="pb-lg-2"><a href="#">Cứu hộ động vật: Những bệnh nhân đầu tiên của mùa lạnh..</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+        </div>
+    </div>
+    <div class="row justify-content-center my-lg-4 animated">
+        <div class="col-md-4 p-0" style="background: url('../images/news-image2.jpg') no-repeat center; background-size: cover; z-index: 1">
+        </div>
+        <div class="col-md-4 news-content p-lg-5">
+            <h3 class="pb-lg-2"><a href="#">Bạn hỏi tôi trả lời: Cá mập có tạo tiếng động không?</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+        </div>
+    </div>
+    <div class="row justify-content-center my-lg-4 animated">
+        <div class="col-md-4 p-0" style="background: url('../images/news-image3.jpg') no-repeat center; background-size: cover; z-index: 1">
+        </div>
+        <div class="col-md-4 news-content p-lg-5">
+            <h3 class="pb-lg-2"><a href="#">Cập nhật loài mới: Cá Bọ Cạp san hô</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+        </div>
+    </div>
+    <h4 class="text-center mt-lg-4"><a href="#" class="btn px-5 py-2">XEM THÊM</a></h4>
+</section>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jQuery.scrollSpeed.js"></script>
+<script src="js/jquery.countup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    jQuery.scrollSpeed(100, 800);
+    $(document).ready(function() {
+        setInterval(function() {
             var d = new Date();
             var h = d.getHours();
-            var m = d.getMinutes();
-            if (h>=8 && h<=20)
-            {
-                 $(".status").text("ĐANG MỞ CỬA");
-                 $(".status").removeClass("offline");
-            }
-            else{
+            if (h >= 8 && h <= 20) {
+                $(".status").text("ĐANG MỞ CỬA");
+                $(".status").removeClass("offline");
+            } else {
                 $(".status").text("ĐANG ĐÓNG CỬA");
                 $(".status").addClass("offline");
             }
-        },1000);
-        
-});
-        
-    </script>
+        }, 1000);
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $("header").addClass("scroll-down");
+            } else {
+                $("header").removeClass("scroll-down");
+            }
+        });
+        $('.counter').countUp();
+        var waypoints = $('#intro').waypoint(function(direction) {
+            $('#intro img').addClass("bounceInLeft");
+            $('#intro .content').addClass("bounceInRight");
+        }, {
+            offset: '85%'
+        });
+        var waypoints2 = $('#explore').waypoint(function(direction) {
+            $('#explore img').addClass("bounceInRight");
+            $('#explore .content').addClass("bounceInLeft");
+        }, {
+            offset: '85%'
+        });
+        var waypoints3 = $('#stats').waypoint(function(direction) {
+            $('#stats .animated').addClass("fadeInUp");
+        }, {
+            offset: '85%'
+        });
+        var waypoints4 = $('#mission').waypoint(function(direction) {
+            $('#mission .animated').addClass("fadeInLeft");
+        }, {
+            offset: '85%'
+        });
+        var waypoints5 = $('#news').waypoint(function(direction) {
+            $('#news .animated').addClass("fadeIn");
+        }, {
+            offset: '85%'
+        });
+    });
+</script>
 </body>

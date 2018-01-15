@@ -1,8 +1,10 @@
 body{
-    background-image: url(../images/aquatarifbandeau.jpg);
-    background-repeat: no-repeat;
     background-size: 100% 20%;
-    background-color: #03152a ;
+}
+#logo{
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 #main{
     background-color: white;
@@ -13,7 +15,7 @@ section h1,h2{
     color: #013475;
 }
 section h1{
-    color: white;
+    color: #005BA8;
 }
 #main>h2{
     color: #008EFF;
@@ -39,8 +41,8 @@ th:first-child{
 hr {
     background-color: #013475 !important;
     color: #013475 !important;
-    height: 3px !important;
-    max-width: 80%;
+    height: 2px !important;
+    max-width: 96%;
 }
 #online-ticket h2,h5{
     text-align: center;

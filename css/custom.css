@@ -1,303 +1,336 @@
-/* CSS Document */
-.video-background {
+body {
+    font-family: 'Play', sans-serif;
+}
+@font-face {
+    font-family: 'Rokkitt';
+    src: url('/fonts/Rokkitt-Regular.ttf');
+}
+@font-face {
+    font-family: 'Rokkitt';
+    src: url('/fonts/Rokkitt-Bold.ttf');
+    font-weight: bold;
+}
+header {
     position: fixed;
-    z-index: -99;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    z-index: 30;
 }
 
-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-@media (min-aspect-ratio: 16/9) {
-    .video-background {
-        height: 300%;
-        top: -100%;
-    }
-}
-
-@media (max-aspect-ratio: 16/9) {
-    .video-background {
-        width: 300%;
-        left: -100%;
-    }
-}
-header{
-    position: sticky;
-    top: 0;
-    z-index: 3;
-    transition: all 0.5s;
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.5);
-    padding-bottom: 10px;
-    padding-top: 20px;
-}
-.scroll-down{
-    background-color: rgba(68, 136, 146, .6);
-     padding-top: 0;
-     padding-bottom: 0;
-}
-.scroll-down:hover{
-    background-color: rgba(68, 136, 146, .9);
-}
-nav {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.3em;
-}
-
-nav .navbar-nav .nav-link {
+header a {
+    display: block;
+    text-align: center;
+    vertical-align: middle;
     color: white;
-    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.6), 0 6px 6px rgba(0, 0, 0, 0.6);
-    transition: color 0.3s;
+    font-weight: bold;
+    line-height: 1.5rem;
+    font-size: 80%;
 }
 
-nav .navbar-nav .nav-link:first-child {
-    padding-left: 0;
-}
-nav .navbar-nav .active>.nav-link,
-nav .navbar-nav .nav-link:hover,
-nav .navbar-nav .nav-link:focus {
-    color: rgb(0, 206, 241);
-}
-
-nav ul li {
-    padding-left: 1.3rem;
-    padding-right: 1.3rem;
-}
-
-nav ul li:first-child {
-    padding-left: 0;
-}
-
-nav ul li:last-child {
-    padding-right: 0;
-}
-
-.timer {
+a:hover {
+    text-decoration: none;
     color: white;
-    background-color: rgba(255, 255, 255, 0.2);
-    font-size: 90%;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    padding-right: 0;
-    margin-top: 1rem;
-    transition: all 0.5s;
 }
 
-.timer span {
-    padding: .6rem;
+#menu {
+    background-color: #001938;
     float: left;
 }
-.timer .status {
-    border-right: solid 1px rgba(255, 255, 255, 0.2);
-    padding-right: .9rem;
-    position: relative;
+
+#ticket {
+    background-color: #E75405;
+    float: left;
 }
 
-.timer strong {
-    padding-right: .3rem;
-    padding-left: .3rem;
-}
-
-.status::before {
-    position: absolute;
-    content: "";
-    width: 12px;
-    height: 12px;
-    border-radius: 6px;
-    background-color: #00FF06;
-    left: -.6rem;
-    top: .9rem;
-}
-.offline.status::before{
-    background-color: gray;
-}
-.ticket {
-    padding: .5rem 2rem;
-    float: right;
-    background-color: #F95D62;
-    font-weight: bold;
-    color: white;
-    border: .1rem solid #F95D62;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.ticket:hover {
-    text-decoration: none;
-    background-color: white;
-    color: #F95D62;
-}
-
-.search {
-    margin-top: 1rem;
-    padding: .5rem;
-    padding-left: 1.2rem;
-}
-
-.search a {
-    color: white;
-    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), 0 6px 6px rgba(0, 0, 0, 0.4);
-}
-section {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+section#hello {
     position: relative;
     overflow: hidden;
 }
-section.hello {
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    color: white;
-    padding-top: 5rem;
-}
-section.hello p{
-    letter-spacing: .7rem;
-}
-section.hello h1{
-    font-size: 300%;
-}
-section.hello span{
-    color: rgb(0, 206, 241);
-    font-size: 250%;
-}
-section.hello::after{
+
+#background-img {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
-    content: "";
-    background: linear-gradient(rgba(0, 143, 255,0),rgba(0, 143, 255,0.8));
-}
-.scroll-effect{
-    margin-top: 2rem;
-    position: relative;
-    z-index: 2;
-}
-.scroll-effect div{
-    margin: 0 auto;
-    margin-bottom: 1.5rem;
-    border: 2px solid white;
-    background-color: transparent;
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-    opacity: 0;
-}
-@keyframes fadedot {
-    0%{opacity: 0;}
-    50%{opacity: 1;}
-    100%{opacity: 0;}
-}
-.scroll-effect div:nth-child(1){
-    animation: fadedot 2.5s 1.7s ease-in-out infinite;
-}
-.scroll-effect div:nth-child(2){
-    animation: fadedot 2.5s 2s ease-in-out infinite;
-}
-.scroll-effect div:nth-child(3){
-    animation: fadedot 2.5s 2.5s ease-in-out infinite;
+    height: 100%;
+    z-index: -99;
+    background: url('/images/background-header.jpg') no-repeat center center;
+    background-size: cover;
+    transform: translateY(35px);
 }
 
-section.intro{
-    background-color: rgba(0, 143, 255,0.8);
-    padding: 8rem 5rem;
+section#hello h1 {
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 700;
+    font-size: 4rem;
+    color: #FFCD3D;
 }
-section.intro img{
-    box-shadow: 0 0px 20px rgba(0,0,0,0.79), 0 4px 6px rgba(0,0,0,0.63);
-}
-section.intro .content{
-    color: rgba(255, 255, 255, 1);
-    padding: 0 3rem 0 3rem;
-    font-weight: bold;
-    font-size: 150%;
-}
-section.intro .content h1,h2{
-    font-weight: bold;
-    margin-bottom: 2rem;
-    font-size: 200%;
-}
-section.intro .content a{
-    background-color: rgb(0, 143, 255);
+
+section#hello small a {
+    font-size: 2rem;
+    font-family: 'Rokkitt', serif;
     color: white;
-    border-radius: 40px!important;
-    transition: all .3s;
 }
-section.intro .content a:hover{
-    color: rgb(0, 143, 255);
-    background-color: white;
-}
-section#stats{
-    background: url('../images/background-numbSec.jpg') no-repeat center;
-    background-size: cover;
+
+.btn-custom {
+    display: inline-block;
     text-align: center;
-    color: white;
-    
-}
-section#stats span{
-    font-size: 300%;
-    font-weight: bold;
-}
-section#stats h5{
-    border-bottom: #ffc203 1px solid;
-    padding-bottom: 2rem;
-}
-section#stats p{
-    padding-top: 1rem;
-    line-height: 2rem;
-}
-section#mission .content{
-    background-color: rgba(115,207,255,0.9);
-    position: relative;
-}
-section#mission img{
-    position: absolute;
-    left:  93%;
-    width: 80%;
-}
-section#mission::before{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50%;
-    content: "";
-    background: linear-gradient(rgba(0, 143, 255,0),rgba(14,50,72,0.75));
-}
-section#news{
+    vertical-align: middle;
     color: white;
     font-weight: bold;
-    padding: 5rem;
+    line-height: 1.5rem;
+    background-color: #E75405;
 }
-section#news .news-content a{
+
+section#hello h6 {
     color: white;
-    transition: color .3s;
+    letter-spacing: .3rem;
+    line-height: 1.9rem;
 }
-section#news .news-content a:hover{
-    color: rgba(255, 255, 255, .8);
-    text-decoration: none;
-}
-section#news h1{
-    font-family: 'Oswald', sans-serif;
-}
-section#news .news-content{
-    background-color: #008FFF;
-    z-index: 0;
-}
-section .news-content p{font-weight:normal;}
-section#news h4 a{
-    font-weight: bold;
-    background-color: rgb(0, 143, 255);
-    color: white;
-    border-radius: 40px!important;
-    transition: all .3s;
-}
-section#news h4 a:hover{
-    color: rgb(0, 143, 255);
+
+section#explore {
     background-color: white;
+}
+
+.explore-title {
+    font-family: 'Rokkitt', serif;
+    font-weight: bold;
+    color: #001938;
+    line-height: 1.4rem;
+}
+
+.love-explore {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 140%;
+}
+
+.love-explore i {
+    vertical-align: middle;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.species-explore {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    font-weight: bold;
+}
+
+.species-explore i {
+    vertical-align: middle;
+    float: right;
+    font-weight: bold;
+}
+
+a.more {
+    color: black;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+
+a.more:hover {
+    text-decoration: none;
+    color: black;
+}
+
+#explore-1 {
+    background-color: #FFCE3E;
+}
+
+#flash-ticket {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+section#explore h5 {
+    color: #E75405;
+    text-align: right;
+    font-weight: bold;
+}
+
+section#explore h5 span {
+    font-size: 250%;
+    vertical-align: middle;
+}
+
+section#explore small {
+    color: black;
+}
+
+#buy-ticket {
+    text-align: left;
+}
+
+#buy-ticket i {
+    float: right;
+    vertical-align: center;
+    font-size: 140%;
+    font-weight: bold;
+}
+
+.title-content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.title-content h2,
+h1 {
+    font-family: 'Rokkitt', serif;
+    color: #FFCD3D;
+    font-weight: bold;
+}
+
+.title-content p {
+    color: white
+}
+
+.title-content i {
+    float: right
+}
+
+.twitter {
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+.twitter img {
+    border-radius: 50%;
+    border: 8px solid #E6E6E6;
+}
+
+.twitter h3 {
+    font-family: 'Rokkitt', serif;
+}
+
+.twitter p {
+    color: #319DFF;
+}
+
+.twitter-icon {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    color: #C5CAD0;
+}
+
+#news-title {
+    font-family: 'Rokkitt', serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 170%;
+}
+
+#news-title i {
+    float: right;
+    font-size: 35%;
+    padding-top: .5rem;
+}
+
+#news {
+    background: url('/images/diver.jpg');
+    background-size: cover;
+}
+
+#thanks {
+    background: url('/images/paper-background.jpg');
+    background-size: cover;
+}
+
+#thanks h1 {
+    font-weight: bold;
+    color: #306588;
+}
+
+#conservation {
+    font-family: 'Rokkitt', serif;
+}
+
+#conservation h5 {
+    color: #87705D;
+}
+
+#links {
+    list-style: none;
+    color: #306588;
+}
+
+#links li {
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}
+
+#links li img {
+    vertical-align: middle;
+    padding-right: .3rem;
+}
+
+#links li i {
+    padding-left: .3rem;
+}
+
+#gallery .twitter {
+    background-color: #FFCE3E
+}
+
+#gallery .twitter p {
+    color: black;
+}
+
+#gallery .twitter-icon {
+    color: white;
+}
+
+#gallery span {
+    color: #1473B7;
+    font-weight: bold;
+    font-family: 'Rokkitt', serif;
+}
+
+#gallery span::before {
+    content: "#"
+}
+
+#social {
+    text-align: center;
+}
+
+#fb {
+    background-color: #073366;
+    color: white;
+}
+
+#fb img {
+    vertical-align: middle
+}
+
+#social p {
+    display: inline-block;
+    padding-top: .3rem;
+    padding-right: .3rem
+}
+
+#tw {
+    background-color: #29B2E4;
+    color: white;
+}
+
+#social i {
+    vertical-align: middle;
+    padding-left: .3rem
+}
+
+#social a {
+    color: white;
 }

@@ -1,5 +1,11 @@
-.hover:hover{
-    background-color: yellow;
+.hover{
+	overflow: hidden;
+	cursor: pointer;
+}
+.hover img{
+	transition: all 0.3s;
+}
+.hover:hover img{
     transform: scale(1.1);
-    transition-duration: .2s;
+    transition-duration: .2s;  
 }

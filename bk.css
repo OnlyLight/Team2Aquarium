@@ -1,0 +1,5 @@
+.hover:hover{
+    background-color: yellow;
+    transform: scale(1.1);
+    transition-duration: .2s;
+}

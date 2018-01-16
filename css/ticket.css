@@ -1,0 +1,118 @@
+body{
+    background-image: url(../images/aquatarifbandeau.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 20%;
+    background-color: #03152a ;
+}
+#main{
+    background-color: white;
+}
+section h1,h2{
+    font-weight: bold;
+    font-family: 'Rokkitt', serif;
+    color: #013475;
+}
+section h1{
+    color: white;
+}
+#main>h2{
+    color: #008EFF;
+    font-weight: normal;
+    text-align: center;
+    background-color: #F2F2F2;
+}
+table, th, td {
+    color: gray;
+    text-align: center;
+}
+th, td {
+    padding: .5rem;
+    text-align: center;
+}
+th {
+    background-color: #1070bd;
+    color: white;
+}
+th:first-child{
+    background-color: white;
+}
+hr {
+    background-color: #013475 !important;
+    color: #013475 !important;
+    height: 3px !important;
+    max-width: 80%;
+}
+#online-ticket h2,h5{
+    text-align: center;
+}
+#online-ticket h4,h5{
+    font-family: 'Rokkitt', serif;
+    font-weight: bold;
+}
+#online-ticket .card{
+    overflow: hidden;
+    position: relative;
+    border: none;
+    background-color: #F2F2F2;
+}
+#online-ticket .card a{
+    font-weight: bold;
+}
+#online-ticket .card-title{
+    color: #0170C1;
+}
+#online-ticket .card-body{
+    background-color: #EAEBED;
+}
+#online-ticket .card-body small{
+    color: #979798;
+}
+#online-ticket .most-popular::after{
+    content: "PHỔ BIẾN NHẤT";
+    position: absolute;
+    left: -100%;
+    top: 20px;
+    background-color: #E75405;
+    width: 200%;
+    color: white;
+    font-weight: bold;
+    transform: rotate(-13deg);
+    padding: .3rem;
+    padding-left: 50%;
+    font-size: 80%;
+}
+#online-ticket .most-popular a{
+    background-color: #E75405!important;
+    color: white;
+}
+#membership p{
+    color: gray;
+}
+#membership p b:first-child{
+    color: #4272AD;
+}
+#member-card{
+    position: relative;
+}
+#member-card::after{
+    content: "THẺ HỘI VIÊN";
+    color: white;
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    font-weight: bold;
+    bottom:20px;
+    font-family: 'Rokkitt', serif;
+}
+#payments{
+    background-color: #F2F2F2;
+}
+#payments h2{
+    font-family: 'Rokkitt', serif;
+    font-weight: bold;
+    text-align: center;
+}
+#payments img{
+    padding-left: .3rem;
+    padding-right: .3rem;
+}

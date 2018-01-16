@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Aquarium</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/faq.css">
     <link rel="stylesheet" href="css/contact-css.css">
     <link rel="stylesheet" href="css/custom.css">
     <!-- Angular JS -->
@@ -17,6 +18,16 @@
     <header class="headers" ng-include="'common/header.html'"></header>
     <!--contact-->
     <div class="container magin-header">
+        <div class="row">
+            <div class="col-lg-12">
+                <span id="title-here">You Are Here: </span>
+                <ol class="breadcrumb" id="faq-breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Trang Chủ</a></li>
+                    <li class="breadcrumb-item"><a href="#">Liên hệ</a></li>
+                </ol>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-lg-12">
                 <!--heading-->
@@ -120,11 +131,23 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jQuery.scrollSpeed.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js/popper.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>-->
     <script src="js/bootstrap.min.js"></script>
     <script>
         jQuery.scrollSpeed(100, 800);
         $(document).ready(function() {
+            setInterval(function() {
+                var d = new Date();
+                var h = d.getHours();
+                if (h >= 8 && h <= 20) {
+                    $(".status").text("ĐANG MỞ CỬA");
+                    $(".status").removeClass("offline");
+                } else {
+                    $(".status").text("ĐANG ĐÓNG CỬA");
+                    $(".status").addClass("offline");
+                }
+            }, 1000);
             $(window).scroll(function() {
                 if ($(document).scrollTop() > 50) {
                     $("header").addClass("scroll-down");

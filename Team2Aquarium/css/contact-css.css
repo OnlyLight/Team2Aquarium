@@ -1,3 +1,9 @@
+body {
+    background-image: url(../images/jellyfish.png),url(../images/corals_footer-left.png);
+    background-repeat: no-repeat,no-repeat;
+    background-position: 10% 130px,-3% 100%;
+}
+
 .headers {
     background-color: #448892;
 }
@@ -40,16 +46,12 @@
 }
 
 .content-sidebar {
-    width: 260px;
+    width: 101%;
     padding: 9px 13px 7px 7px;
 }
 
 .thumbnail {
     border: none;
-}
-
-.img-news {
-    height: 2%;
 }
 
 a {
@@ -213,4 +215,10 @@ a {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
+}
+
+@media (max-width: 992px) {
+    #videos {
+        display: none;
+    }
 }

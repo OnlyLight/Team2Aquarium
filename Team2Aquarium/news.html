@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Auqrium</title>
+    <title>Aquarium</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/faq.css">
     <link rel="stylesheet" href="css/contact-css.css">
     <link rel="stylesheet" href="css/custom.css">
     <!-- Angular JS -->
@@ -16,6 +17,16 @@
 <body ng-app="">
     <header class="headers" ng-include="'common/header.html'"></header>
     <div class="container magin-header">
+        <div class="row">
+            <div class="col-lg-12">
+                <span id="title-here">You Are Here: </span>
+                <ol class="breadcrumb" id="faq-breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Trang Chủ</a></li>
+                    <li class="breadcrumb-item"><a href="#">Tin tức</a></li>
+                </ol>
+            </div>
+        </div>
+
         <div class="row">
             <!--sidebar-->
             <div class="col-lg-3">
@@ -53,7 +64,7 @@
 
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="block-sidebar">
+                        <div class="block-sidebar" id="videos">
                             <!--title videos-->
                             <div class="title-sidebar">
                                 <h4>
@@ -82,7 +93,7 @@
                     <div class="row news-block">
                         <div class="col-lg-3">
                             <div class="thumbnail">
-                                <img src="https://www.aquarium-berlin.de/fileadmin/_processed_/0/5/csm_Insektenhotel_Aquarium_Berlin_Zooschule_web_3ae98cd9f8.jpg" alt="News 1">
+                                <img src="images/news-1.jpg" alt="News 1">
                             </div>
                         </div>
 
@@ -103,7 +114,7 @@
                     <div class="row news-block">
                         <div class="col-lg-3">
                             <div class="thumbnail">
-                                <img src="https://www.aquarium-berlin.de/fileadmin/_processed_/8/5/csm_Ferienprogramm_Zoo_Berlin_2015__33__5c7e1adeb8.jpg" alt="News 2">
+                                <img src="images/news-2.jpg" alt="News 2">
                             </div>
                         </div>
 
@@ -122,7 +133,7 @@
                     <div class="row news-block">
                         <div class="col-lg-3">
                             <div class="thumbnail">
-                                <img src="https://www.aquarium-berlin.de/fileadmin/_processed_/7/9/csm_Sphendon-Ultraschall_IZW_Brueckenechsen_Aquarium_2_bf9df75499.jpg" alt="News 3">
+                                <img src="images/news-3.jpg" alt="News 3">
                             </div>
                         </div>
 
@@ -155,11 +166,23 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jQuery.scrollSpeed.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
         jQuery.scrollSpeed(100, 800);
         $(document).ready(function() {
+            setInterval(function() {
+                var d = new Date();
+                var h = d.getHours();
+                if (h >= 8 && h <= 20) {
+                    $(".status").text("ĐANG MỞ CỬA");
+                    $(".status").removeClass("offline");
+                } else {
+                    $(".status").text("ĐANG ĐÓNG CỬA");
+                    $(".status").addClass("offline");
+                }
+            }, 1000);
             $(window).scroll(function() {
                 if ($(document).scrollTop() > 50) {
                     $("header").addClass("scroll-down");

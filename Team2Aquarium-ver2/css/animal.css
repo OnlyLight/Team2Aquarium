@@ -1,0 +1,67 @@
+body {
+    background-image: url(../img/jellyfish.png),url(../img/corals_footer-left.png);
+    background-repeat: no-repeat,no-repeat;
+    background-position: 10% 130px,-3% 100%;
+}
+
+.cave3d .a .even img {
+    transform: rotateZ(-1.5deg);
+    transition-duration: .2s;
+}
+
+.cave3d .a .odd img {
+    transform: rotateZ(1.5deg);
+    transition-duration: .2s;
+}
+
+.cave3d .a .even img:hover {
+    transform: rotateZ(1.5deg);
+    transition-duration: .2s;
+}
+
+.cave3d .a .odd img:hover {
+    transform: rotateZ(-1.5deg);
+    transition-duration: .2s;
+}
+
+.detail-animal {
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
+.first-header {
+    padding-top: 12%;
+}
+
+.first-header span {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.first-header span a {
+    color: #2aabd2;
+}
+
+.first-header span a:hover {
+    text-decoration: none;
+    color: #458a94;
+}
+
+.title-animal {
+    color: #2aabd2;
+    font-size: 60px;
+}
+
+.content-title {
+    font-weight: bold;
+    font-size: 22px;
+    font-style: italic;
+    padding-top: 2%;
+}
+
+@media (max-width: 992px) {
+    .detail-animal {
+        padding-left: 8%;
+    }
+}

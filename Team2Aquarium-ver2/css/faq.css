@@ -1,0 +1,84 @@
+body {
+    background-image: url(../img/jellyfish.png),url(../img/corals_footer-left.png);
+    background-repeat: no-repeat,no-repeat;
+    background-position: 10% 130px,-3% 100%;
+}
+
+#title-here {
+    color: #bebebe;
+    font-style: italic;
+    font-size: 14px;
+}
+
+#faq-breadcrumb {
+    display: inline-flex;
+    background-color: white;
+}
+
+.breadcrumb-item a {
+    color: #458a94;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.nav-tabs .nav-link.active {
+    font-weight: bold;
+}
+
+.nav-item a {
+    color: #458a94;
+    font-weight: bold;
+}
+
+.tab-content {
+    margin-top: 2%;
+}
+
+.tab-content h4 {
+    cursor: pointer;
+    border-top: 1px solid #e6e6e6;
+    line-height: 70px;
+    color: #458a94;
+}
+
+.hide {
+    display: none;
+}
+
+.title-faq {
+    color: #2aabd2;
+    margin-bottom: 8%;
+    margin-top: 2%;
+    font-size: 60px;
+}
+
+.content {
+    margin-top: 7%;
+}
+
+.content a {
+    color: #458a94;
+}
+
+.content a:hover {
+    text-decoration: none;
+    color: #458a94;
+}
+
+.content-item {
+    color: #458a94;
+}
+
+.content-item a {
+    color: #458a94;
+}
+
+.content-item a:hover {
+    color: #458a94;
+}
+
+@media (max-width: 992px) {
+    .detail-fap {
+        display: none;
+    }
+}

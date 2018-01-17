@@ -1,9 +1,3 @@
-body {
-    background-image: url(../img/jellyfish.png),url(../img/corals_footer-left.png);
-    background-repeat: no-repeat,no-repeat;
-    background-position: 10% 130px,-3% 100%;
-}
-
 .cave3d .a .even img {
     transform: rotateZ(-1.5deg);
     transition-duration: .2s;

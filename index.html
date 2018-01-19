@@ -14,23 +14,49 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Font Google -->
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Play:400,700&amp;subset=vietnamese" rel="stylesheet">
+    <link href="css/font-custom.css" rel="stylesheet">
 </head>
 
 <body ng-app="">
-    <header ng-include="'common/header.html'">
+    <header>
+                <div id="menu">
+                    <div id="button-group">
+                        <a href="#" class="pt-3 pb-2" id="menu-btn"><i class="fa fa-bars fa-2x" aria-hidden="true"></i><br>MENU</a>
+                        <a href="ticket.html" class="pt-3 pb-2" id="ticket"><i class="fa fa-ticket fa-2x" aria-hidden="true"></i><br>VÉ</a>
+                    </div>
+                    <div class="p-md-4" id="menu-content">
+                    <h2>Chuẩn bị cho chuyến đi</h2>
+                    <ul class="menu-list">
+                        <li><a href="#">VŨ TRỤ AQUARIUM</a></li>
+                        <li><a href="#">BÁCH KHOA TOÀN THƯ</a></li>
+                        <li><a href="#">ĂN UỐNG</a></li>
+                        <li><a href="#">TIN TỨC VÀ SỰ KIỆN</a></li>
+                    </ul>
+                    <h2>Nhóm & chuyên gia</h2>
+                    <ul class="menu-list">
+                        <li><a href="#">CÁC NHÓM</a></li>
+                        <li><a href="#">CHUYẾN ĐI CÔNG TÁC</a></li>
+                    </ul>
+                    <h2>Sự bảo tồn</h2>
+                    <ul class="menu-list">
+                        <li><a href="#">HÀNH ĐỘNG VÀ BẢO QUẢN</a></li>
+                        <li><a href="#">TRUNG TÂM RÙA BIỂN</a></li>
+                        <li><a href="#">CÔNG TY THAM GIA</a></li>
+                        <li><a href="#">HẬU TRƯỜNG BLOG</a></li>
+                    </ul>
+                    </div>
+                </div>
     </header>
     <section class="container-fluid" id="hello">
         <div id="background-img">
         </div>
-        <div class="row pt-md-2">
-            <div class="col-md-4 mx-auto">
+        <div class="row pt-5 pt-md-2">
+            <div class="col-md-4 mt-5 mt-md-0 mx-auto">
                 <a href="#"><img src="images/logo.png" class="img-fluid" alt="Aquarium"></a>
             </div>
-            <h1 class="pl-md-5 pt-md-5 ml-md-5 mt-md-5 w-100">Thế Giới<br>Đại Dương<br><small><a href="#">KHÁM PHÁ NGAY +</a></small></h1>
-            <div class="pl-0 col-md-10 pl-md-5 ml-md-5 mt-md-5"><a href="#" class="btn-custom p-2 px-md-4 py-md-3">MUA VÉ ONLINE &nbsp&nbsp&nbsp<i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></a></div>
-            <h6 class="w-100 text-center mt-md-5 pt-md-5"><a href="#explore" class="text-light">ĐẮM MÌNH VÀO ĐẠI DƯƠNG RỘNG LỚN<br><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></a></h6>
+            <h1 class="d-none d-md-block pl-md-5 pt-md-5 ml-md-5 mt-md-5 w-100">Thế Giới<br>Đại Dương<br><small><a href="#">KHÁM PHÁ NGAY +</a></small></h1>
+            <div class="d-none d-md-block pl-0 col-md-10 pl-md-5 ml-md-5 mt-md-5"><a href="#" class="btn-custom p-2 px-md-4 py-md-3">MUA VÉ ONLINE &nbsp&nbsp&nbsp<i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></a></div>
+            <h6 class="w-100 text-center mt-5 pt-md-5"><a href="#explore" class="text-light">ĐẮM MÌNH VÀO ĐẠI DƯƠNG RỘNG LỚN<br><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></a></h6>
         </div>
     </section>
     <section class="container-fluid" id="explore">
@@ -39,30 +65,30 @@
                 <div class="row mx-md-5">
                     <div class="col-md-8">
                         <div class="row">
-                            <div class="col-md-6 pt-md-4 pl-md-4" id="explore-1">
-                                <h3 class="explore-title pb-md-3">Khám phá hơn 600 loài</h3>
+                            <div class="col-md-6 pt-4 pb-4 pb-md-0 pl-md-4" id="explore-1">
+                                <h3 class="explore-title pb-3">Khám phá hơn 600 loài</h3>
                                 <a href="#" class="more">XEM THÊM</a>
                             </div>
-                            <div class="col-md-6 px-md-0">
+                            <div class="col-md-6 px-0">
                                 <img src="images/whitetip-reef-shark.jpg" class="img-fluid">
                                 <div class="love-explore p-4"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>764</span></div>
                                 <div class="species-explore px-4 pb-3">CÁ MẬP SAN HÔ ĐẦU ĐEN
                                     <br><span class="font-italic font-weight-normal">Carchahinus melanosperus</span><sup><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></sup></div>
                             </div>
-                            <div class="col-md-6 px-md-0">
+                            <div class="col-md-6 px-0">
                                 <img src="images/clown-fish.jpg" class="img-fluid">
                                 <div class="love-explore p-4"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>764</span></div>
                                 <div class="species-explore px-4 pb-3">CÁ HỀ CAM
                                     <br><span class="font-italic font-weight-normal">Amphirion percula</span><sup><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></sup></div>
                             </div>
-                            <div class="col-md-6 px-md-0">
+                            <div class="col-md-6 px-0">
                                 <img src="images/Sea_Nettle.jpg" class="img-fluid">
                                 <div class="love-explore p-4"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>764</span></div>
                                 <div class="species-explore px-4 pb-3">SỨA BIỂN BẮC
                                     <br><span class="font-italic font-weight-normal">Chrysaora melanaster</span><sup><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></sup></div>
                             </div>
                             <div class="col-md-12 mt-md-3 mt-lg-5">
-                                <div class="row">
+                                <div class="row text-center">
                                     <div class="col-md-2 px-md-0">
                                         <img src="images/travellerchoices_2015.jpg" alt="TripAdVisor">
                                     </div>
@@ -76,18 +102,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 pt-md-4 px-md-0">
-                        <h3 class="explore-title pb-lg-1 pl-md-5">Đặt vé trực tuyến
+                    <div class="col-md-4 pt-4 px-0 order-first order-md-12">
+                        <h3 class="explore-title pb-lg-1 pl-3 pl-md-5">Đặt vé trực tuyến
                         </h3>
-                        <p class="pl-md-5">Với vé tiện lợi thẻ flash,
+                        <p class="pl-md-5 pl-3">Với vé tiện lợi thẻ flash,
                             <br>tiết kiệm thời gian tránh rườm rà !</p>
-                        <div class="row pt-lg-3 pb-lg-5 mb-md-3 pl-md-5">
-                            <div class="col-md-10">
+                        <div class="col-md-10 col-8 mx-auto py-md-5">
                                 <img class="img-fluid" src="images/ticket.jpg" alt="Ticket" id="flash-ticket">
-                            </div>
                         </div>
-                        <h5 class="pr-md-5 pl-md-5">Giá chỉ từ <span>14$</span><br><small>(Bao gồm 10$ cho trẻ em 3 tới 17 tuổi)</small></h5>
-                        <a href="#" class="btn-custom w-100 py-md-3 px-md-4 mt-lg-5" id="buy-ticket">MUA VÉ NGAY<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
+                        <h5 class="pr-md-5 pl-md-5 text-center text-md-right">Giá chỉ từ <span>14$</span><br><small>(Bao gồm 10$ cho trẻ em 3 tới 17 tuổi)</small></h5>
+                        <a href="#" class="btn-custom w-100 p-3 px-md-4 mt-lg-5" id="buy-ticket">MUA VÉ NGAY<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -95,9 +119,9 @@
     </section>
     <section class="container-fluid" id="audio-guide">
         <div class="row mx-md-5">
-            <div class="col-md-4 px-md-0" style="background: url('/images/audio-guide.jpg');
-    background-size: cover;">
-                <div class="title-content px-md-4">
+            <div class="col-md-4 px-0">
+                <img class="img-fluid" src="images/audio-guide.jpg" alt="Audio Guide">
+                <div class="title-content px-md-4 px-3">
                     <h2 class="pb-lg-5">Audio chỉ dẫn:<br>điều cần thiết để<br>có trải nghiệm tốt nhất</h2>
                     <p>Kể cả trẻ em vẫn được
                         <br>sử dụng audio chỉ dẫn<sup><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></sup></p>
@@ -112,12 +136,12 @@
     </section>
     <section class="container-fluid" id="news-events">
         <div class="row mx-md-5">
-            <div class="col-md-8 px-md-0">
+            <div class="col-md-8 px-0">
                 <img class="img-fluid" src="images/coral.jpg">
-                <div class="px-md-4 pt-md-3" id="news-title">Tin tức & sự kiện<i class="fa fa-circle" aria-hidden="true"></i></div>
-                <div class="title-content px-md-4">
-                    <h2 class="">Loài san hô đang gặp nguy hiểm</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                <div class="px-md-4 px-3 pt-md-3" id="news-title">Tin tức & sự kiện<i class="fa fa-circle" aria-hidden="true"></i></div>
+                <div class="title-content px-md-4 px-3">
+                    <h2>Loài san hô đang gặp nguy hiểm</h2>
+                    <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                         <br>incididunt ut labore et dolore magna aliqua...</p>
                 </div>
             </div>
@@ -154,11 +178,11 @@
         <div class="row mx-md-5">
             <div class="col-md-4 twitter pt-md-5">
                 <i class="fa fa-twitter twitter-icon fa-3x" aria-hidden="true"></i>
-                <h3 class="pt-md-5 mt-md-5">"Đã có thời gian tuyệt vời!"<br>
+                <h3 class="pt-5 mt-5">"Đã có thời gian tuyệt vời!"<br>
                 <span>Aquarium</span><span>ThuyCung</span></h3>
                 <p><img src="images/avatar.jpg"> @AyoubRIADI</p>
             </div>
-            <div class="col-md-8 px-md-0" style="background: url('/images/gallery-of-light.jpg');
+            <div class="col-md-8 px-md-0 d-none d-md-block" style="background: url('/images/gallery-of-light.jpg');
     background-size: cover;">
                 <div class="title-content px-md-4">
                     <h1 class="">Phòng trưng bày<br>của<br>Ánh sáng</h1>
@@ -170,10 +194,10 @@
     </section>
     <section class="container-fluid" id="social">
         <div class="row">
-            <div class="col-md-12 py-md-4" id="fb">
+            <div class="col-md-12 py-4" id="fb">
                 <p class="mb-0">THAM GIA CÙNG CHÚNG TÔI TRÊN</p><a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
             </div>
-            <div class="col-md-12 py-md-4" id="tw">
+            <div class="col-md-12 py-4" id="tw">
                 <p class="mb-0">THEO DÕI THÔNG TIN MỚI NHẤT CỦA AQUARIUM TRÊN</p><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
             </div>
         </div>
@@ -192,9 +216,13 @@
 
         function parallax() {
             var scrolled = $(window).scrollTop();
-            var y = 'translateY(' + (scrolled * 0.25) +'px)';
-            $('#background-img').css('transform',y);
-        }
+            var y = 'translateY(' + (scrolled * 0.25) + 'px)';
+            $('#background-img').css('transform', y);
+        };
+        $("#menu-btn").click(function(event) {
+            $("#menu").toggleClass("open");
+            event.preventDefault();
+        });
     });
     </script>
 </body>

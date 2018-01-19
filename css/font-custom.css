@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Rokkitt';
+    src: url('/fonts/Rokkitt-Regular.ttf');
+}
+@font-face {
+    font-family: 'Rokkitt';
+    src: url('/fonts/Rokkitt-Bold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Alfa Slab One';
+    src: url('/fonts/AlfaSlabOne-Regular.ttf');
+}
+@font-face {
+    font-family: 'Play';
+    src: url('/fonts/Play-Regular.ttf');
+}
+@font-face {
+    font-family: 'Play';
+    src: url('/fonts/Play-Bold.ttf');
+    font-weight: bold;
+}

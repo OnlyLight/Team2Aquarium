@@ -2,6 +2,19 @@ body {
     font-family: 'Play', sans-serif;
 }
 
+@media (max-width: 768px) {
+    #title img {
+        margin-top: -16px;
+        margin-left: 25px;
+        margin-bottom: 37px;
+    }
+
+    .title-head {
+        text-align: center;
+        margin-top: 16px;
+    }
+}
+
 header {
     position: fixed;
     top: 0;

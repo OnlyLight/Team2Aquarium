@@ -1,0 +1,19 @@
+.hover{
+	overflow: hidden;
+	cursor: pointer;
+}
+.hover img{
+	transition: all 0.3s;
+}
+.hover:hover img{
+    transform: scale(1.1);
+    transition-duration: .2s;  
+}
+
+nav .navbar-nav .nav-link:first-child {
+	font-size: 20px;
+}
+
+.title-breadcrumb {
+	margin-left: 7%;
+}

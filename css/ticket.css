@@ -4,13 +4,14 @@ body {
     background-size: contain;
     color: white;
     background-color: #023f88;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Rokkitt', serif;
 }
 #ticket-title, #online-ticket h2{
 	text-align: center;
 	text-transform: uppercase;
 	color: white;
 	padding-top: 13rem;
+    font-family: 'Alfa Slab One', cursive;
 }
 #ticket-title h2{
 	font-size: 20px; 
@@ -120,8 +121,8 @@ img{
     width: 120%;
     height: 2px;
     background-color: #ea3755;
-    transform-origin: 50% 50%;
-    transform: rotate(-10deg);
+    transform-origin: 85% 50%;
+    transform: rotate(-16deg);
 
 }
 .price-block .price.previous-price-suffix {
@@ -173,11 +174,13 @@ hr {
 .price{
 	font-size: 50px;
 	line-height: 35px;
+    font-family: 'Pacifico', cursive;
 }
 .card-body h3{
 	text-transform: uppercase;
 	color: #023f88;
 	font-weight: 700;
+    font-family: 'Rokkitt', serif;
 }
 .layer.content, .description {
     position: absolute;
@@ -217,11 +220,12 @@ hr {
     border-radius: 10px;
 }
 .promo-tile .title {
-    font-family: "Oswald",sans-serif;
+    font-family: 'Rokkitt', serif;
     font-size: 24px;
     line-height: 24px;
     text-transform: uppercase;
     color: #023f88;
+    font-weight: 700;
 }
 .promo-tile {
 	color: black;
@@ -249,7 +253,8 @@ hr {
     background-repeat: no-repeat;
 }
 .cta h1{
-	font-size: 1rem;
+	font-size: 3rem;
+    font-family: 'Pacifico', cursive;
 }
 
 

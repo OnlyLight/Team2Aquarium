@@ -8,197 +8,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/home.css">
     <!-- Angular JS -->
     <script src="js/angular.min.js"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Font Google -->
     <link href="css/font-custom.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 </head>
 
 <body ng-app="">
     <header>
-                <div id="menu">
-                    <div id="button-group">
-                        <a href="#" class="pt-3 pb-2" id="menu-btn"><i class="fa fa-bars fa-2x" aria-hidden="true"></i><br>MENU</a>
-                        <a href="ticket.html" class="pt-3 pb-2" id="ticket"><i class="fa fa-ticket fa-2x" aria-hidden="true"></i><br>VÉ</a>
-                    </div>
-                    <div class="p-md-4" id="menu-content">
-                    <h2>Chuẩn bị cho chuyến đi</h2>
-                    <ul class="menu-list">
-                        <li><a href="#">VŨ TRỤ AQUARIUM</a></li>
-                        <li><a href="#">BÁCH KHOA TOÀN THƯ</a></li>
-                        <li><a href="#">ĂN UỐNG</a></li>
-                        <li><a href="#">TIN TỨC VÀ SỰ KIỆN</a></li>
-                    </ul>
-                    <h2>Nhóm & chuyên gia</h2>
-                    <ul class="menu-list">
-                        <li><a href="#">CÁC NHÓM</a></li>
-                        <li><a href="#">CHUYẾN ĐI CÔNG TÁC</a></li>
-                    </ul>
-                    <h2>Sự bảo tồn</h2>
-                    <ul class="menu-list">
-                        <li><a href="#">HÀNH ĐỘNG VÀ BẢO QUẢN</a></li>
-                        <li><a href="#">TRUNG TÂM RÙA BIỂN</a></li>
-                        <li><a href="#">CÔNG TY THAM GIA</a></li>
-                        <li><a href="#">HẬU TRƯỜNG BLOG</a></li>
-                    </ul>
-                    </div>
+        <div class="container-fluid">
+            <div class="row px-md-5 py-md-3">
+                <div class="col-md-4" id="logo">
+                    <a href="#"><img class="img-fluid" src="images/logo.png" alt="Aquarium"></a>
                 </div>
+                <div class="col-md-8">
+                    <nav class="navbar navbar-expand-lg pr-md-0">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon text-white"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active px-md-2">
+                                    <a class="nav-link" href="#">TRANG CHỦ <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item px-md-2 ">
+                                    <a class="nav-link" href="#">MUA VÉ ONLINE</a>
+                                </li>
+                                <li class="nav-item px-md-2">
+                                    <a class="nav-link" href="#">KHÁM PHÁM</a>
+                                </li>
+                                <li class="nav-item px-md-2">
+                                    <a class="nav-link" href="#">TIN TỨC</a>
+                                </li>
+                                <li class="nav-item px-md-2">
+                                    <a class="nav-link" href="#">GIỚI THIỆU</a>
+                                </li>
+                                <li class="nav-item px-md-2">
+                                    <a class="nav-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="nav-item px-md-2">
+                                    <a class="nav-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
     <section class="container-fluid" id="hello">
         <div id="background-img">
         </div>
         <div class="row pt-5 pt-md-2">
-            <div class="col-md-4 mt-5 mt-md-0 mx-auto">
-                <a href="#"><img src="images/logo.png" class="img-fluid" alt="Aquarium"></a>
-            </div>
-            <h1 class="d-none d-md-block pl-md-5 pt-md-5 ml-md-5 mt-md-5 w-100">Thế Giới<br>Đại Dương<br><small><a href="#">KHÁM PHÁ NGAY +</a></small></h1>
-            <div class="d-none d-md-block pl-0 col-md-10 pl-md-5 ml-md-5 mt-md-5"><a href="#" class="btn-custom p-2 px-md-4 py-md-3">MUA VÉ ONLINE &nbsp&nbsp&nbsp<i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></a></div>
-            <h6 class="w-100 text-center mt-5 pt-md-5"><a href="#explore" class="text-light">ĐẮM MÌNH VÀO ĐẠI DƯƠNG RỘNG LỚN<br><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></a></h6>
+            <h1 class="pl-md-5 pt-md-5 ml-md-5 mt-md-5 w-100">Thế Giới<br>Đại Dương<br><small><a href="#">KHÁM PHÁ NGAY +</a></small></h1>
+            <div class="pl-0 col-md-10 pl-md-5 ml-md-5 mt-md-4 mb-md-3"><a href="#" class="btn-custom p-2 px-md-3 py-md-2">MUA VÉ ONLINE &nbsp&nbsp&nbsp<i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></a></div>
+            <h6 class="w-100 text-center mt-5 pt-md-5"><a href="#explore" class="text-light"><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></a></h6>
         </div>
     </section>
-    <section class="container-fluid" id="explore">
+    <section class="container-fluid" id="welcome">
         <div class="row">
-            <div class="col-md-12">
-                <div class="row mx-md-5">
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-6 pt-4 pb-4 pb-md-0 pl-md-4" id="explore-1">
-                                <h3 class="explore-title pb-3">Khám phá hơn 600 loài</h3>
-                                <a href="#" class="more">XEM THÊM</a>
-                            </div>
-                            <div class="col-md-6 px-0">
-                                <img src="images/whitetip-reef-shark.jpg" class="img-fluid">
-                                <div class="love-explore p-4"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>764</span></div>
-                                <div class="species-explore px-4 pb-3">CÁ MẬP SAN HÔ ĐẦU ĐEN
-                                    <br><span class="font-italic font-weight-normal">Carchahinus melanosperus</span><sup><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></sup></div>
-                            </div>
-                            <div class="col-md-6 px-0">
-                                <img src="images/clown-fish.jpg" class="img-fluid">
-                                <div class="love-explore p-4"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>764</span></div>
-                                <div class="species-explore px-4 pb-3">CÁ HỀ CAM
-                                    <br><span class="font-italic font-weight-normal">Amphirion percula</span><sup><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></sup></div>
-                            </div>
-                            <div class="col-md-6 px-0">
-                                <img src="images/Sea_Nettle.jpg" class="img-fluid">
-                                <div class="love-explore p-4"><i class="fa fa-heart-o" aria-hidden="true"></i> <span>764</span></div>
-                                <div class="species-explore px-4 pb-3">SỨA BIỂN BẮC
-                                    <br><span class="font-italic font-weight-normal">Chrysaora melanaster</span><sup><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></sup></div>
-                            </div>
-                            <div class="col-md-12 mt-md-3 mt-lg-5">
-                                <div class="row text-center">
-                                    <div class="col-md-2 px-md-0">
-                                        <img src="images/travellerchoices_2015.jpg" alt="TripAdVisor">
-                                    </div>
-                                    <div class="col-lg-5 col-md-10 pt-md-2 pl-md-5 pl-lg-0">
-                                        <h3 class="explore-title mb-0">Aquarium được<br>Du khách yêu thích nhất</h3>
-                                        <p class="mb-1">Được TripAdvisor xếp hạng aquarium
-                                            <br>số 1 tại Việt Nam</p>
-                                        <a href="#" class="more">THÊM THÔNG TIN</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 pt-4 px-0 order-first order-md-12">
-                        <h3 class="explore-title pb-lg-1 pl-3 pl-md-5">Đặt vé trực tuyến
-                        </h3>
-                        <p class="pl-md-5 pl-3">Với vé tiện lợi thẻ flash,
-                            <br>tiết kiệm thời gian tránh rườm rà !</p>
-                        <div class="col-md-10 col-8 mx-auto py-md-5">
-                                <img class="img-fluid" src="images/ticket.jpg" alt="Ticket" id="flash-ticket">
-                        </div>
-                        <h5 class="pr-md-5 pl-md-5 text-center text-md-right">Giá chỉ từ <span>14$</span><br><small>(Bao gồm 10$ cho trẻ em 3 tới 17 tuổi)</small></h5>
-                        <a href="#" class="btn-custom w-100 p-3 px-md-4 mt-lg-5" id="buy-ticket">MUA VÉ NGAY<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container-fluid" id="audio-guide">
-        <div class="row mx-md-5">
-            <div class="col-md-4 px-0">
-                <img class="img-fluid" src="images/audio-guide.jpg" alt="Audio Guide">
-                <div class="title-content px-md-4 px-3">
-                    <h2 class="pb-lg-5">Audio chỉ dẫn:<br>điều cần thiết để<br>có trải nghiệm tốt nhất</h2>
-                    <p>Kể cả trẻ em vẫn được
-                        <br>sử dụng audio chỉ dẫn<sup><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></sup></p>
-                </div>
-            </div>
-            <div class="col-md-8 twitter pt-md-5 d-none d-md-block">
-                <i class="fa fa-twitter twitter-icon fa-3x" aria-hidden="true"></i>
-                <h3 class="pt-lg-5 mt-md-5">"Một ngày tuyệt vời tại Aquarium, ở đây thực sự rất thú vị!"</h3>
-                <p><img src="images/avatar.jpg"> @Jacques B.</p>
-            </div>
-        </div>
-    </section>
-    <section class="container-fluid" id="news-events">
-        <div class="row mx-md-5">
-            <div class="col-md-8 px-0">
-                <img class="img-fluid" src="images/coral.jpg">
-                <div class="px-md-4 px-3 pt-md-3" id="news-title">Tin tức & sự kiện<i class="fa fa-circle" aria-hidden="true"></i></div>
-                <div class="title-content px-md-4 px-3">
-                    <h2>Loài san hô đang gặp nguy hiểm</h2>
-                    <p class="d-none d-md-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        <br>incididunt ut labore et dolore magna aliqua...</p>
-                </div>
-            </div>
-            <div class="col-md-4 px-md-0 d-none d-md-block" id="news">
-                <div class="title-content px-md-4">
-                    <h2 class="">Aquarium: <br>Một câu chuyện<br>của niềm đam mê</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                        <sup><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></sup></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container-fluid">
-        <div class="row mx-md-5 px-md-4 py-md-4" id="thanks">
-            <div class="col-md-4 pr-lg-4" id="conservation">
-                <h1 class="pt-md-4">Bảo tồn động vật</h1>
-                <h5>Aquarium của chúng tôi không chỉ đơn giản là thủy cung. Mà còn là trung tâm nghiên cứu, đào tạo và nhận thức về môi trường!<br>
-                Aquarium vẫn sẽ luôn hoạt động mỗi ngày. Cám ơn tất cả các bạn!</h5>
-            </div>
-            <div class="col-md-4">
-                <img class="img-fluid" src="images/turtle.png" alt="Turtle">
-            </div>
-            <div class="col-md-4">
-                <ul class="pt-md-4 pl-lg-5 ml-lg-5" id="links">
-                    <li class="py-lg-3"><img src="images/conservation-center.png">TRUNG TÂM RÙA BIỂN <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></li>
-                    <li class="py-lg-3"><img src="images/conservation-action.png">HÀNH ĐỘNG VÀ BẢO TỒN <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></li>
-                    <li class="py-lg-3"><img src="images/conservation-world.png">CÔNG TY ĐẦU TƯ <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></li>
-                    <li class="py-lg-3"><img src="images/conservation-blog.png">BLOG HẬU TRƯỜNG <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="container-fluid" id="gallery">
-        <div class="row mx-md-5">
-            <div class="col-md-4 twitter pt-md-5">
-                <i class="fa fa-twitter twitter-icon fa-3x" aria-hidden="true"></i>
-                <h3 class="pt-5 mt-5">"Đã có thời gian tuyệt vời!"<br>
-                <span>Aquarium</span><span>ThuyCung</span></h3>
-                <p><img src="images/avatar.jpg"> @AyoubRIADI</p>
-            </div>
-            <div class="col-md-8 px-md-0 d-none d-md-block" style="background: url('/images/gallery-of-light.jpg');
-    background-size: cover;">
-                <div class="title-content px-md-4">
-                    <h1 class="">Phòng trưng bày<br>của<br>Ánh sáng</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor..
-                        <sup><i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></sup></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container-fluid" id="social">
-        <div class="row">
-            <div class="col-md-12 py-4" id="fb">
-                <p class="mb-0">THAM GIA CÙNG CHÚNG TÔI TRÊN</p><a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
-            </div>
-            <div class="col-md-12 py-4" id="tw">
-                <p class="mb-0">THEO DÕI THÔNG TIN MỚI NHẤT CỦA AQUARIUM TRÊN</p><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+            <div class="col-md-6 pl-md-5 pt-md-5">
+                <h3 class="hand-style">
+                    Chào mừng bạn<br><span class="">Đến với Aquarium</span>
+                </h3>
             </div>
         </div>
     </section>

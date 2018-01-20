@@ -4,6 +4,7 @@ body {
     background-size: contain;
     color: white;
     background-color: #023f88;
+    font-family: 'Josefin Sans', sans-serif;
 }
 #ticket-title, #online-ticket h2{
 	text-align: center;
@@ -13,11 +14,11 @@ body {
 }
 #ticket-title h2{
 	font-size: 20px; 
-	font-family: "lato",sans-serif;
+	font-family: 'Pacifico', cursive;
 }
 #ticket-title h1{
 	font-size: 54px; 
-	font-family: 'Oswald',sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 #ticket-content{
     margin-top: 100px;
@@ -125,7 +126,7 @@ img{
 }
 .price-block .price.previous-price-suffix {
     font-size: 12px;
-    font-family: "lato",sans-serif;
+    font-family: 'Pacifico', cursive;
     font-weight: bold;
     padding-left: 6px;
     display: inline-block;

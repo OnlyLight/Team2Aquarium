@@ -2,26 +2,6 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     position: relative;
 }
-.swiper-container {
-      width: 100%;
-    }
-    .swiper-slide {
-      text-align: center;
-      background: #fff;
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
 .hand-style{
     font-family: 'Pacifico', cursive;
 }
@@ -81,9 +61,6 @@ section#hello h6 {
 section#welcome{
     background-color: white;
 }
-section#welcome .row div{
-    background-color: white;
-}
 section#welcome h4{
     border-bottom: 1px solid gray;
 }
@@ -92,15 +69,82 @@ section#welcome .carousel-control-prev,.carousel-control-next{
 }
 .item-slide{
     overflow: hidden;
+
+}
+.item-slide::before,.item-slide::after, .right-out, .bottom-out{
+  background-color: rgba(255, 255, 255, .2);
+  transition: all .3s;
+  transition-delay: .2s;
+  position: absolute;
+  content: "";
+}
+.item-slide::after{
+  width: 100%;
+  top: 0;
+  left: 0%;
+  height: 10%;
+}
+.item-slide::before{
+  width: 10%;
+  bottom: 0;
+  left: 0%;
+  height: 90%;
+  z-index: 1;
+}
+.right-out{
+  bottom: 0;
+  right: 0;
+  height: 90%;
+  width: 10%;
+}
+.bottom-out{
+  bottom: 0;
+  left: 10%;
+  height: 10%;
+  width: 80%;
+}
+.item-slide:hover::after{
+  height: 0%;
+}
+.item-slide:hover::before,.item-slide:hover .right-out{
+  width: 0%;
+  height: 100%;
+}
+.item-slide:hover .bottom-out{
+  height: 0;
+  width: 100%;
+  left: 0;
 }
 .item-bg{
     overflow: hidden;
-    
 }
 .item-bg img{
-    transform: scale(1.5);
-    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+    transition: all .8s ease-in-out;
 }
 .item-slide:hover .item-bg img{
     transform: scale(1);
+}
+.item-slide:hover .item-content{
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+}
+.item-content{
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background-color: transparent;
+  text-align: center;
+  transition: all .3s ease-in-out;
+  border: .3rem solid white;
+}
+.item-content h3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
 }

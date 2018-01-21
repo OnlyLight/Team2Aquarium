@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <!-- Angular JS -->
     <script src="js/angular.min.js"></script>
     <!-- Font Awesome -->
@@ -39,13 +40,13 @@
                                     <a class="nav-link" href="#">MUA VÉ ONLINE</a>
                                 </li>
                                 <li class="nav-item px-md-2">
-                                    <a class="nav-link" href="#">KHÁM PHÁM</a>
+                                    <a class="nav-link" href="#">KHÁM PHÁ</a>
                                 </li>
                                 <li class="nav-item px-md-2">
                                     <a class="nav-link" href="#">TIN TỨC</a>
                                 </li>
                                 <li class="nav-item px-md-2">
-                                    <a class="nav-link" href="#">GIỚI THIỆU</a>
+                                    <a class="nav-link" href="#">HỖ TRỢ</a>
                                 </li>
                                 <li class="nav-item px-md-2">
                                     <a class="nav-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -72,13 +73,37 @@
             <h6 class="w-100 text-center mt-5 pt-md-5"><a href="#explore" class="text-light"><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></a></h6>
         </div>
     </section>
-    <section class="container-fluid" id="welcome">
-        <div class="row">
-            <div class="col-md-6 pl-md-5 pt-md-5">
-                <h3 class="hand-style">
-                    Chào mừng bạn<br><span class="">Đến với Aquarium</span>
-                </h3>
+    <section class="container-fluid py-md-2 px-md-0" id="welcome">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4 px-md-1 item-slide">
+                            <div class="item-bg">
+                                <img class="img-fluid" src="images/clown-fish.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-4 px-md-1 item-slide">
+                            <div class="item-bg">
+                                <img class="img-fluid" src="images/Sea_Nettle.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-4 px-md-1 item-slide">
+                            <div class="item-bg">
+                                <img class="img-fluid" src="images/whitetip-reef-shark.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
         </div>
     </section>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -86,8 +111,10 @@
     <script src="js/jQuery.scrollSpeed.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script>
     jQuery.scrollSpeed(100, 800);
+
     $(document).ready(function() {
         $(window).scroll(function(e) {
             parallax();
@@ -98,10 +125,12 @@
             var y = 'translateY(' + (scrolled * 0.25) + 'px)';
             $('#background-img').css('transform', y);
         };
-        $("#menu-btn").click(function(event) {
-            $("#menu").toggleClass("open");
-            event.preventDefault();
-        });
+    });
+    </script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
     });
     </script>
 </body>

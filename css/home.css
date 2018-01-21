@@ -1,6 +1,27 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
+    position: relative;
 }
+.swiper-container {
+      width: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
 .hand-style{
     font-family: 'Pacifico', cursive;
 }
@@ -23,7 +44,7 @@ header {
     z-index: -99;
     background: url('../images/background-top.jpg') no-repeat center;
     background-size: cover;
-    filter: brightness(80%);
+    filter: brightness(90%);
 }
 nav ul li a{
     color: white!important;
@@ -59,4 +80,27 @@ section#hello h6 {
 }
 section#welcome{
     background-color: white;
+}
+section#welcome .row div{
+    background-color: white;
+}
+section#welcome h4{
+    border-bottom: 1px solid gray;
+}
+section#welcome .carousel-control-prev,.carousel-control-next{
+    width: 5%;
+}
+.item-slide{
+    overflow: hidden;
+}
+.item-bg{
+    overflow: hidden;
+    
+}
+.item-bg img{
+    transform: scale(1.5);
+    transition: all .2s ease-in-out;
+}
+.item-slide:hover .item-bg img{
+    transform: scale(1);
 }

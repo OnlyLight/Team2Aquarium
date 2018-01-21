@@ -27,14 +27,19 @@ body {
 img{
 	width:100%;
 }
+#sealife {
+    position: relative;
+}
 #sealife::after{
 	content: "";
     display: block;
     width: 100%;
     height: 46px;
     background-image: url("../images/icon-plus.png");
-    background-position: center center;
     background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 .sealife {
 	    background: radial-gradient(ellipse at center, rgba(108,183,218,0.9) 20%, rgba(108,183,218,0.4) 50%, rgba(108,183,218,0) 70%);

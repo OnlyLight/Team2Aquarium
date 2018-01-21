@@ -3,9 +3,10 @@ body {
 }
 
 .container {
-    padding: 55px;
+    margin-top: 20px;
+    padding: 35px;
     background-color: #eae9e0;
-    border-radius: 40px;
+    border-radius: 30px;
 }
 
 .animation {
@@ -48,6 +49,14 @@ body {
 
 .banner {
     background-color: #000203;
+}
+
+.carousel-item img {
+    width: 100%;
+}
+
+#title-news {
+    margin-top: -13px;
 }
 
 .title-head span img {

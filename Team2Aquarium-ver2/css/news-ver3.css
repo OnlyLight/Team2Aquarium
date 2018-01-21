@@ -1,0 +1,240 @@
+body {
+    background-color: #023f88;
+}
+
+.banner {
+    background-image: url("../../Team2Aquarium-ver2/img/background-news.jpg");
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+#title-news {
+    font-family: "Luckiest Guy", sans-serif;
+    color: white;
+    font-size: 350%;
+    padding-top: 20%;
+    padding-left: 45%;
+}
+
+.content-news {
+    position: absolute;
+    top: -200px;
+    padding-bottom: 50px;
+}
+
+.news-margin {
+    padding: 0 0;
+    margin-top: 24px;
+    background-color: #bad7e8;
+    border-radius: 7px;
+}
+
+.news-margin .col-lg-5 img {
+    margin-left: -15px;
+}
+
+.description {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.description h4 {
+    font-family: "Luckiest Guy", sans-serif;
+    text-align: left;
+    color: #023f88;
+}
+
+.description h6 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #8b9ba3;
+}
+
+.description p {
+    text-align: left;
+}
+
+.paragraph-content {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #5b656b;
+}
+
+.content-ticker {
+    position: absolute;
+    top: -176px;
+    margin-left: 30px;
+}
+
+.sidebar {
+    padding-left: 45px;
+}
+
+.img-thumbnail {
+    border: none;
+    padding: 0;
+    position: relative;
+}
+
+.img-thumbnail img {
+    width: 100%;
+}
+
+.content-news-detail {
+    margin-top: -24px;
+}
+
+.thumbnail-detail {
+    position: absolute;
+    top: 8%;
+    left: 15%;;
+    text-align: center;
+}
+
+.thumbnail-detail h6, h2 {
+    font-family: "Luckiest Guy", sans-serif;
+    color: white;
+}
+
+.thumbnail-detail h6 {
+    font-size: 14px;
+}
+
+.thumbnail-detail h2 a {
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+}
+
+.thumbnail-detail h2 a:hover {
+    text-decoration: none;
+    color: #5bc0de;
+    transition: all 0.5s;
+}
+
+.link-position {
+    margin-top: 30px;
+    background-color: #00a8e5;
+    padding: 30px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.link-position a h4 {
+    color: white;
+    font-size: 20px;
+}
+
+.link-position a:hover {
+    text-decoration: none;
+}
+
+.intoduce {
+    margin-top: 30px;
+    border-radius: 7px;
+    padding: 30px;
+    background-color: #bad7e8;
+}
+
+.center-group h2, p {
+    text-align: center;
+}
+
+.center-group p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.social h6 {
+    font-family: "Oswald", sans-serif;
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.social ul {
+    list-style-type: none;
+    font-size: 13px;
+    margin-top: 15px;
+    padding-left: 0;
+    color: #7F8C8D;
+}
+
+.social ul li {
+    display: inline-block;
+    background: none repeat scroll 0 0 #B5B5B5;
+    border: 2px solid #B5B5B5;
+    border-radius: 50%;
+    height: 36px;
+    line-height: 36px;
+    margin: 0 8px 0 0;
+    padding: 0;
+    text-align: center;
+    width: 36px;
+    transition: all 0.8s ease 0s;
+}
+
+.social ul li:hover {
+    border: 2px solid #2c3e50;
+    background: #2c3e50;
+    transform: scale(1.15) rotate(360deg);
+}
+
+#facebook:hover {
+    border: 2px solid #46629e;
+    background: #47639d;
+    transform: scale(1.15) rotate(360deg);
+}
+
+#gg:hover {
+    border: 2px solid #dc4c41;
+    background: #dc4c41;
+    transform: scale(1.15) rotate(360deg);
+}
+
+#twitter:hover {
+    border: 2px solid #32cdfd;
+    background: #32cdfd;
+}
+
+#youtube:hover {
+    border: 2px solid #ee1c1b;
+    background: #ee1c1b;
+}
+
+.social ul li a {
+    color: #78828d;
+    padding: 0 0 5px 0;
+    display: block;
+}
+
+.social ul li a i {
+    font-size: 16px;
+    margin: 0 0 0 5px;
+    color: #EDEFF1 !important;
+}
+
+@media (max-width: 992px) {
+    .my-images img {
+        display: none;
+    }
+
+    .img-thumbnail {
+        margin-top: 7%;
+    }
+
+    .thumbnail-detail {
+        top: 30%;
+        left: 4%;
+    }
+
+    .thumbnail-detail h6 {
+        font-size: 34px;
+    }
+
+    .thumbnail-detail h2 a {
+        font-size: 60px;
+    }
+
+    .social {
+        text-align: center;
+    }
+}

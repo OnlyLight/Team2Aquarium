@@ -13,22 +13,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="FAQ.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FAQ.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="news-ver3.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/news-ver3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1803">
-              <caret line="224" column="7" lean-forward="true" selection-start-line="224" selection-start-column="7" selection-end-line="224" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="396">
+              <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="faq.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/faq.css">
+      <file leaf-file-name="news-ver3.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/news-ver3.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="147" column="16" lean-forward="false" selection-start-line="147" selection-start-column="16" selection-end-line="147" selection-end-column="16" />
+            <state relative-caret-position="223">
+              <caret line="220" column="22" lean-forward="false" selection-start-line="220" selection-start-column="22" selection-end-line="220" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -64,9 +66,11 @@
         <option value="$PROJECT_DIR$/faq-ver2.html" />
         <option value="$PROJECT_DIR$/css/animation.css" />
         <option value="$PROJECT_DIR$/FAQ.html" />
-        <option value="$PROJECT_DIR$/css/animation-news-ver2.css" />
-        <option value="$PROJECT_DIR$/news-ver2.html" />
         <option value="$PROJECT_DIR$/css/faq.css" />
+        <option value="$PROJECT_DIR$/news-ver2.html" />
+        <option value="$PROJECT_DIR$/css/animation-news-ver2.css" />
+        <option value="$PROJECT_DIR$/news-ver3.html" />
+        <option value="$PROJECT_DIR$/css/news-ver3.css" />
       </list>
     </option>
   </component>
@@ -77,10 +81,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="287" />
-    <option name="y" value="5" />
-    <option name="width" value="934" />
-    <option name="height" value="738" />
+    <option name="x" value="11" />
+    <option name="y" value="12" />
+    <option name="width" value="1179" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -167,12 +171,13 @@
       <workItem from="1516182880855" duration="4781000" />
       <workItem from="1516370894569" duration="6490000" />
       <workItem from="1516440484841" duration="12541000" />
-      <workItem from="1516501690663" duration="4021000" />
+      <workItem from="1516501690663" duration="6074000" />
+      <workItem from="1516518668192" duration="20078000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50371000" />
+    <option name="totallyTimeSpent" value="72502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -208,6 +213,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/css/animation-news-ver2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/faq-ver2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -295,7 +308,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -307,37 +319,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/animation-news-ver2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="71" column="29" lean-forward="false" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news-ver2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="260" column="45" lean-forward="false" selection-start-line="260" selection-start-column="45" selection-end-line="260" selection-end-column="45" />
-          <folding>
-            <element signature="e#2674#2680#0" expanded="true" />
-            <element signature="e#6556#6562#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FAQ.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1803">
           <caret line="224" column="7" lean-forward="true" selection-start-line="224" selection-start-column="7" selection-end-line="224" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/faq.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="147" column="16" lean-forward="false" selection-start-line="147" selection-start-column="16" selection-end-line="147" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/background-news.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news-ver2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="5" column="6888" lean-forward="false" selection-start-line="5" selection-start-column="6888" selection-end-line="5" selection-end-column="6888" />
+          <folding>
+            <element signature="e#33059#33306#2" expanded="false" />
+            <element signature="e#33668#33988#2" expanded="false" />
+            <element signature="e#34344#34633#2" expanded="false" />
+            <element signature="e#55708#55908#2" expanded="false" />
+            <element signature="e#56030#56179#2" expanded="false" />
+            <element signature="e#56325#56471#2" expanded="false" />
+            <element signature="e#57025#57188#1" expanded="false" />
+            <element signature="e#68149#68392#2" expanded="false" />
+            <element signature="e#69238#69487#2" expanded="false" />
+            <element signature="e#96534#96721#2" expanded="false" />
+            <element signature="e#96767#96956#2" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/animation-news-ver2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="116" column="24" lean-forward="false" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news-ver3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="25" column="34" lean-forward="false" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/news-ver3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="220" column="22" lean-forward="false" selection-start-line="220" selection-start-column="22" selection-end-line="220" selection-end-column="22" />
           <folding />
         </state>
       </provider>

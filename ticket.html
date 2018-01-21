@@ -18,7 +18,8 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 </head>
 
-<body>
+<body ng-app="">
+<header ng-include="'common/header.html'"></header>
 <div class="row w-100">
     <div class="mx-auto" id="ticket-title">
         <h2>great savings on</h2>
@@ -32,11 +33,11 @@
                 <h2>Sydney Big Ticket</h2>
                 <p>Save money by combining your SEA LIFE ticket with Sydney’s other top attractions and visit any time with in 30 days. SEA LIFE, WILD LIFE Sydney Zoo and Madame Tussauds are all located right next to each other in Sydney’s Darling Harbour so why not make day of it.</p>
             </div>
-            <div class="row col-md-8">
-                <div class="col-sm-3" id="sealife">
+            <div class="row col-md-8 pt-md-5">
+                <div class="col-sm-3 pt-md-4" id="sealife">
                     <img src="images/sls-desktop.png">
                 </div>
-                <div class="row col-sm-9 sealife">
+                <div class="row col-sm-9 sealife justify-content-end">
                     <div class="col-xs-6 col-sm-3 col">
                         <div class="tile-wrap">
                             <img src="images/wildlife.jpg" alt="Alt">
@@ -80,7 +81,7 @@
                             <p><small class="pb-lg-3 card-text">Choose from Madame Tussauds, Sydney Tower Eye (excluding SKYWALK) and Sydney WILD LIFE Zoo</small></p>
                         </div>
                         <br>
-                        <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW &nbsp;</button></a>
+                        <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
                     </div>
                 </div>
                 <div class="col-md-4 px-lg-3 mt-3 mt-md-0 text-center">
@@ -90,6 +91,7 @@
                     </div>
                     <div class="card-image">
                         <div class="img2">
+                            <img id="mostpop" src="images/lepluspopen.png">
                             <img src="images/b8fc74822d07ca1e8bedfee0a39274a45057e673.jpg">
                         </div>
                     </div>
@@ -105,7 +107,7 @@
                             <p><small class="pb-lg-3 card-text">Choose from Madame Tussauds, Sydney Tower Eye (excluding SKYWALK) and Sydney WILD LIFE Zoo</small></p>
                         </div>
                         <br>
-                        <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW &nbsp;</button></a>
+                        <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
                     </div>
                 </div>
                 <div class="col-md-4 px-lg-3 mt-3 mt-md-0 text-center">
@@ -130,7 +132,7 @@
                             <p><small class="pb-lg-3 card-text">Choose from Madame Tussauds, Sydney Tower Eye (excluding SKYWALK) and Sydney WILD LIFE Zoo</small></p>
                         </div>
                         <br>
-                        <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW &nbsp;</button></a>
+                        <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
                     </div>
                 </div>
             </div>
@@ -150,7 +152,7 @@
                             <p><small class="pb-lg-3 card-text">Save up to 20% with an online ticket</small></p>
                             <p><small class="pb-lg-3 card-text">Prices vary by date and time - cheapest in off peak periods</small></p>
                             <br>
-                            <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW &nbsp;</button></a>
+                            <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
                         </div>
                     </div>
                     <div class="col-md-4 px-lg-3 mt-3 mt-md-0 text-center">
@@ -166,7 +168,7 @@
                             <p><small class="pb-lg-3 card-text">Fast-tracked access via online entry</small></p>
                             <br>
                             <br>
-                            <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW &nbsp;</button></a>
+                            <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
                         </div>
                     </div>
                     <div class="col-md-4 px-lg-3 mt-3 mt-md-0 text-center">
@@ -180,7 +182,7 @@
                             <hr>
                             <p><small class="pb-lg-3 card-text">Pick a date and arrive anytime between 4pm and 6pm</small></p>
                             <p><small class="pb-lg-3 card-text">Online pre-bookings only, not available on the same day</small></p>
-                            <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW &nbsp;</button></a>
+                            <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
                         </div>
                     </div>
                 </div>
@@ -202,7 +204,7 @@
                             <p><small class="pb-lg-3 card-text">Get up close and personal with our Sydney colony</small></p>
                             <p><small class="pb-lg-3 card-text">75 minute tour including a behind the scenes tour & free all-day admission</small></p>
                             <br>
-                            <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW &nbsp;</button></a>
+                            <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
                         </div>
                     </div>
                     <div class="col-md-4 px-lg-3 mt-3 mt-md-0 text-center">
@@ -212,13 +214,12 @@
                         <div class="card-body">
                             <h3>private dining</h3>
                             <br>
-                            <br>
-                            <p class="price pt-md-4">$550</p>
+                            <p class="price pt-md-3">$550</p>
                             <p class="price-label">2X ADULT</p>
                             <hr>
                             <p><small class="pb-lg-3 card-text">Enjoy an exclusive private dinner for 2 under the sea</small></p>
                             <p><small class="pb-lg-3 card-text">Choose from 2 locations: Shark Valley or Great Barrier Reef Oceanarium</small></p>
-                            <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW &nbsp;</button></a>
+                            <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
                         </div>
                     </div>
                     <div class="col-md-4 px-lg-3 mt-3 mt-md-0 text-center">
@@ -234,7 +235,7 @@
                             <p><small class="pb-lg-3 card-text">11am boat trip includes shark feeding</small></p>
                             <br>
                             <br>
-                            <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW &nbsp;</button></a>
+                            <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
                         </div>
                     </div>
                 </div>
@@ -262,7 +263,7 @@
                                     <p class="price">$140</p>
                                     <p class="price-label">PER ADULT</p>
                                     <p class="savings"> ONLY $23.30 PER VISIT </p>
-                                    <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW &nbsp;</button></a>
+                                    <a href="#"><button class="btn-orange btn-content py-md-2 px-md-4">BUY NOW <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
                                 </div>
                             </div>
                         </div>
@@ -277,6 +278,24 @@
                         <div class="col-xs-12 col-sm-6">
                             <div class="des-image">
                                 <img src="images/map.jpg">
+                                <div id="img-content">
+                                    <p class="title">Merlin Annual Pass Renewal</p>
+                                    <p>For previous/existing Merlin Annual Pass holders only</p>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <div class="row cta py-md-2"> 
+                                    <div class="col-md-2">
+                                        <h1>$69</h1>
+                                        <p class="price-label">INDIVIDUAL</p>
+                                    </div> 
+                                    <div class="row col-md-9 py-lg-4 justify-content-end"> 
+                                        <a href="#"><button type="button" class="btn btn-primary">MORE INFO <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>            
+                                        <a href="#"><button type="button" class="btn btn-danger px-md-3">BUY NOW <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
+                                    </div>
+                                </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-6 ">
@@ -290,10 +309,9 @@
                                         <h1>$79</h1>
                                         <p class="price-label">FAMILY</p>
                                     </div> 
-                                    <div class="col-md-2"></div>
-                                    <div class="row py-lg-4"> 
-                                        <a href="#"><button class="btn-blue btn-content py-md-1 px-md-2">MORE INFO &nbsp;</button></a>            
-                                        <a href="#"><button class="btn-orange btn-content py-md-1 px-md-2">BUY NOW &nbsp;</button></a>
+                                    <div class="row col-md-10 py-lg-4 justify-content-end"> 
+                                        <a href="#"><button type="button" class="btn btn-primary">MORE INFO <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>            
+                                        <a href="#"><button type="button" class="btn btn-danger px-md-3">BUY NOW <i class="fa fa-arrow-right" aria-hidden="true"></i></button></a>
                                     </div>
                                 </div>
 
@@ -304,6 +322,35 @@
         </div>
     </div>
 </div>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jQuery.scrollSpeed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    jQuery.scrollSpeed(100, 800);
+    $(document).ready(function() {
+        setInterval(function() {
+            var d = new Date();
+            var h = d.getHours();
+            if (h >= 8 && h <= 20) {
+                $(".status").text("ĐANG MỞ CỬA");
+                $(".status").removeClass("offline");
+            } else {
+                $(".status").text("ĐANG ĐÓNG CỬA");
+                $(".status").addClass("offline");
+            }
+        }, 1000);
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $("header").addClass("scroll-down");
+            } else {
+                $("header").removeClass("scroll-down");
+            }
+        });
+    });
+    </script>
 
 </body>
 

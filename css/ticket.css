@@ -38,8 +38,8 @@ img{
     background-image: url("../images/icon-plus.png");
     background-repeat: no-repeat;
     position: absolute;
-    right: 0;
-    top: 0;
+    left: 225px;
+    top: 33px;
 }
 .sealife {
 	    background: radial-gradient(ellipse at center, rgba(108,183,218,0.9) 20%, rgba(108,183,218,0.4) 50%, rgba(108,183,218,0) 70%);
@@ -104,6 +104,11 @@ img{
 	overflow: hidden;
 	position: relative;
 }
+.img2 #mostpop {
+    position: absolute;
+    z-index: 10;
+    width: 52%;
+}
 .card-body {
 	background-color: rgba(219,242,250,0.85);
 	position: relative;
@@ -164,14 +169,7 @@ hr {
 	font-size: 1.4rem;
 	font-weight: bold;
 }
-.btn-orange::after {
-	content: " ";
-    display: inline-block;
-    width: 20px;
-    height: 18px;
-    background-image: url(../images/arrow-right-white.png);
-    background-repeat: no-repeat;
-}
+
 .card-image2 img{
 	width:100%;
 	border-radius: 5px;
@@ -185,7 +183,7 @@ hr {
 	text-transform: uppercase;
 	color: #023f88;
 	font-weight: 700;
-    font-family: 'Rokkitt', serif;
+    font-family: 'Oswald', sans-serif;
 }
 .layer.content, .description {
     position: absolute;
@@ -224,8 +222,8 @@ hr {
     background-color: rgba(219,242,250,0.85);
     border-radius: 10px;
 }
-.promo-tile .title {
-    font-family: 'Rokkitt', serif;
+.promo-tile .title{
+    font-family: 'Oswald', sans-serif;
     font-size: 24px;
     line-height: 24px;
     text-transform: uppercase;
@@ -249,19 +247,29 @@ hr {
 	font-weight: bold;
 	margin-right: 5px;
 }
-.btn-blue::after {
-	content: " ";
-    display: inline-block;
-    width: 20px;
-    height: 18px;
-    background-image: url(../images/arrow-right-white.png);
-    background-repeat: no-repeat;
-}
 .cta h1{
 	font-size: 3rem;
     font-family: 'Pacifico', cursive;
 }
-
+.des-image #img-content {
+    position: absolute;
+    left: 35px;
+    right: 0;
+    top: 15px;
+    bottom: 0;
+}
+#img-content .title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+}
+.btn-danger{
+    background-color: #E75405;
+    margin-left: 10px;
+}
 
 
 

@@ -38,3 +38,7 @@
     src: url('../fonts/JosefinSans-Bold.ttf');
     font-weight: bold;
 }
+@font-face {
+    font-family: 'Pacifico';    
+    src: url('../fonts/Pacifico-Regular.ttf');
+}

@@ -1,0 +1,17 @@
+body{
+	background-color: #000874;
+}
+#khampha .row{
+	position: relative;
+	color: white;
+}
+.img-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.link-content{
+	position: absolute;
+	top: 0;
+	left: 0;
+}

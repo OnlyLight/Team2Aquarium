@@ -54,6 +54,7 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
+.navbar-toggler-icon{border:1px solid white}
 section#hello{
   position: relative;
 }
@@ -67,8 +68,9 @@ section#hello small a {
     font-size: 2rem;
     font-family: 'Oswald', sans-serif;
     color: white;
+    text-decoration: none;
+    transition: all .3s;
 }
-
 .btn-custom {
     display: inline-block;
     text-align: center;

@@ -1,0 +1,282 @@
+body {
+    background-image: url("../../Team2Aquarium-phong/images/images-nguyen/background.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+    background-color: #023f88;
+    font-family: 'Rokkitt', serif;
+}
+#ticket-title, #online-ticket h2{
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	padding-top: 13rem;
+    font-family: 'Alfa Slab One', cursive;
+}
+#ticket-title h2{
+	font-size: 20px; 
+	font-family: 'Pacifico', cursive;
+}
+#ticket-title h1{
+	font-size: 54px; 
+    font-family: 'Oswald', sans-serif;
+}
+#ticket-content{
+    margin-top: 100px;
+}
+img{
+	width:100%;
+}
+#sealife {
+    position: relative;
+    margin-left: 30px;
+}
+#sealife::after{
+	content: "";
+    display: block;
+    width: 100%;
+    height: 46px;
+    background-image: url("../../Team2Aquarium-phong/images/images-nguyen/icon-plus.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 265px;
+    top: 33px;
+}
+#sealife img{
+    margin-left: 80px;
+}
+.sealife {
+	    background: radial-gradient(ellipse at center, rgba(108,183,218,0.9) 20%, rgba(108,183,218,0.4) 50%, rgba(108,183,218,0) 70%);
+}
+
+#online-ticket .card{
+	overflow: hidden;
+    position: relative;
+    height: 110px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    background-color: #012c5f;
+}
+#online-ticket .card2{
+	overflow: hidden;
+    position: relative;
+    height: 110px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    background-color: #f58220;
+}
+#online-ticket .card3{
+	overflow: hidden;
+    position: relative;
+    height: 110px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    background-color: #008280;
+}
+.card-image{
+	width: 100%;
+}
+.img {
+	padding: 0 10% 0 10%;
+	display: block;
+	margin-left: auto; 
+	margin-right: auto;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #012c5f), color-stop(50%, rgba(219,242,250,0.85)));
+	background-image:linear-gradient(to bottom, #012c5f 50%, rgba(219,242,250,0.85) 50%);
+	background-image: -ms-linear-gradient(to bottom, #012c5f 50%, rgba(219,242,250,0.85) 50%); 
+}
+.img2 {
+	padding: 0 10% 0 10%;
+	display: block;
+	margin-left: auto; 
+	margin-right: auto;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f58220), color-stop(50%, rgba(219,242,250,0.85)));
+	background-image:linear-gradient(to bottom, #f58220 50%, rgba(219,242,250,0.85) 50%);
+	background-image: -ms-linear-gradient(to bottom, #f58220 50%, rgba(219,242,250,0.85) 50%); 
+}
+.img3 {
+	padding: 0 10% 0 10%;
+	display: block;
+	margin-left: auto; 
+	margin-right: auto;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #008280), color-stop(50%, rgba(219,242,250,0.85)));
+	background-image:linear-gradient(to bottom, #008280 50%, rgba(219,242,250,0.85) 50%);
+	background-image: -ms-linear-gradient(to bottom, #008280 50%, rgba(219,242,250,0.85) 50%); 
+}
+.img img, .img2 img, .img3 img {
+	border-radius: 5%;
+	overflow: hidden;
+	position: relative;
+}
+.img2 #mostpop {
+    position: absolute;
+    z-index: 10;
+    width: 52%;
+}
+.card-body {
+	background-color: rgba(219,242,250,0.85);
+	position: relative;
+	text-align: center;
+	border-radius: 0 0 10px 10px;
+	color: black;
+}
+.price-block .price.previous {
+    display: inline-block;
+    font-size: 26px;
+    line-height: 26px;
+    position: relative;
+}
+.price-block .price.previous::after {
+	content: '';
+    display: block;
+    position: absolute;
+    left: -10%;
+    top: 10px;
+    width: 120%;
+    height: 2px;
+    background-color: #ea3755;
+    transform-origin: 85% 50%;
+    transform: rotate(-16deg);
+
+}
+.price-block .price.previous-price-suffix {
+    font-size: 12px;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    padding-left: 6px;
+    display: inline-block;
+    vertical-align: top;
+}
+.price-block .price.current {
+    margin-top: 10px;
+    font-size: 50px;
+    line-height: 35px;
+}
+.price-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+hr {
+    border: none;
+    border-top: 5px dotted #83AACC;
+    color: #fff;
+    height: 1px;
+    width: 100%;
+}
+.card-text{
+    font-weight: bold;
+}
+.btn-orange{
+	background-color: #E75405;
+	color: white;
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.card-image2 img{
+	width:100%;
+	border-radius: 5px;
+}
+.price{
+	font-size: 50px;
+	line-height: 35px;
+    font-family: 'Pacifico', cursive;
+}
+.card-body h3{
+	text-transform: uppercase;
+	color: #023f88;
+	font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+}
+.layer.content, .description {
+    position: absolute;
+    z-index: 10;
+    padding-top: 30px;
+}
+.img-wrap {
+	position: relative;
+    width: 160%;
+    border-radius: 5px;
+    overflow: hidden;
+    float: right;
+    margin-left: 400px;
+    margin-right: -400px;
+}
+.shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60%;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0.6)), to(transparent));
+    background: linear-gradient(to right, rgba(0,0,0,0.6), transparent);
+}
+.primary-text .title {
+    font-size: 38px;
+    line-height: 47px;
+}
+.primary-text .desc {
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+}
+.promo-tile {
+    padding: 15px 15px 15px 15px;
+    background-color: rgba(219,242,250,0.85);
+    border-radius: 10px;
+}
+.promo-tile .title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #023f88;
+    font-weight: 700;
+}
+.promo-tile {
+	color: black;
+	margin-bottom: 5px;
+}
+.des-image img{
+	position: relative;
+	border-radius: 10px;
+	overflow: hidden;
+	height: 320px;
+}
+.btn-blue{
+	background-color: #023f88;
+	color: white;
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin-right: 5px;
+}
+.cta h1{
+	font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+}
+.des-image #img-content {
+    position: absolute;
+    left: 35px;
+    right: 0;
+    top: 15px;
+    bottom: 0;
+}
+#img-content .title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+}
+.btn-danger{
+    background-color: #E75405;
+    margin-left: 10px;
+}
+
+
+
+
+
+

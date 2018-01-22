@@ -18,49 +18,7 @@
 </head>
 
 <body ng-app="">
-    <header>
-        <div class="container-fluid">
-            <div class="row px-md-5 py-md-3">
-                <div class="col-md-4" id="logo">
-                    <a href="#"><img class="img-fluid" src="images/logo.png" alt="Aquarium"></a>
-                </div>
-                <div class="col-md-8">
-                    <nav class="navbar navbar-expand-lg pr-md-0">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon text-white"><i class="fa fa-bars" aria-hidden="true"></i></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item active px-md-2">
-                                    <a class="nav-link" href="#">TRANG CHỦ <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item px-md-2 ">
-                                    <a class="nav-link" href="#">MUA VÉ ONLINE</a>
-                                </li>
-                                <li class="nav-item px-md-2">
-                                    <a class="nav-link" href="#">KHÁM PHÁ</a>
-                                </li>
-                                <li class="nav-item px-md-2">
-                                    <a class="nav-link" href="#">TIN TỨC</a>
-                                </li>
-                                <li class="nav-item px-md-2">
-                                    <a class="nav-link" href="#">HỖ TRỢ</a>
-                                </li>
-                                <li class="nav-item px-md-2">
-                                    <a class="nav-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                </li>
-                                <li class="nav-item px-md-2">
-                                    <a class="nav-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
+    <header ng-include="'common/header.html'">
     </header>
     <section class="container-fluid pt-5" id="hello">
         <div id="background-img">

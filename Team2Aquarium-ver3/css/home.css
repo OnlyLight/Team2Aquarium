@@ -183,8 +183,8 @@ section#explore .carousel-control-prev,.carousel-control-next{
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
   background-color: transparent;
-  transition: all .3s ease-in-out;
-  border: .3rem solid white;
+  transition: width .3s, height .3s, border .6s .2s;
+  border: .4rem solid white;
 }
 .item-content h3{
   position: absolute;
@@ -220,4 +220,34 @@ section#explore .carousel-control-prev,.carousel-control-next{
 }
 #intro-ticket div{
   background-color: rgba(0, 0, 0, .3);
+}
+#contact-us{
+  background: url('../images/contact-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+#contact, #contact a{
+  color: white;
+}
+#contact input,#contact button,#contact textarea{
+  background-color: transparent;
+  color: white;
+  border-radius: 0;
+}
+#contact button{
+  border: 2px solid white;
+  cursor: pointer;
+}
+#contact button:hover{
+  background-color: white;
+  color: black;
+}
+#contact input::placeholder, #contact textarea::placeholder{
+  color: white;
+}
+#contact-us h3, #write-us h3{
+  border-bottom: 1px solid white;
+}
+#write-us{
+  background: url('../images/writeus-bg.jpg') no-repeat center center;
+  background-size: cover;
 }

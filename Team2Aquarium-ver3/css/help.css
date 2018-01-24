@@ -27,125 +27,11 @@ body {
 }
 
 #title-news {
-    font-family: "Luckiest Guy", sans-serif;
+    font-family: 'Pacifico', cursive;
     color: white;
     font-size: 350%;
     padding-top: 20%;
-    padding-left: 45%;
-}
-
-.news-margin {
-    margin-top: 24px;
-    background-color: #bad7e8;
-    border-radius: 7px;
-}
-
-.news-margin .col-lg-5 img {
-    margin-left: -15px;
-}
-
-.description {
-    padding-top: 5%;
-    padding-left: 0;
-    margin-left: -7%;
-}
-
-.description h4 {
-    font-family: "Luckiest Guy", sans-serif;
-    text-align: left;
-    color: #023f88;
-}
-
-.description h6 {
-    font-family: 'Josefin Sans', sans-serif;
-    color: #8b9ba3;
-}
-
-.description p {
-    text-align: left;
-}
-
-.my-images {
-    padding-left: 0;
-}
-
-.paragraph-content {
-    font-family: 'Josefin Sans', sans-serif;
-    color: #5b656b;
-}
-
-.sidebar {
-    padding-left: 45px;
-}
-
-.img-thumbnail {
-    border: none;
-    padding: 0 0;
-}
-
-.img-thumbnail img {
-    width: 100%;
-    position: relative;
-}
-
-.thumbnail-detail {
-    position: absolute;
-    top: 8%;
-    left: 15%;
-    text-align: center;
-}
-
-.content-news-detail {
-    margin-top: -24px;
-}
-
-.content-news-detail a {
-    text-decoration: none;
-}
-
-.thumbnail-detail h6, h2 {
-    font-family: "Luckiest Guy", sans-serif;
-    color: white;
-}
-
-.thumbnail-detail h6 {
-    font-size: 14px;
-}
-
-.thumbnail-detail h2 a {
-    font-size: 22px;
-    color: white;
-    text-decoration: none;
-}
-
-.thumbnail-detail h2 a:hover {
-    text-decoration: none;
-    color: #5bc0de;
-    transition: all 0.5s;
-}
-
-.link-position {
-    margin-top: 30px;
-    background-color: #00a8e5;
-    padding: 30px;
-    text-align: center;
-    border-radius: 7px;
-}
-
-.link-position a h4 {
-    color: white;
-    font-size: 20px;
-}
-
-.link-position a:hover {
-    text-decoration: none;
-}
-
-.intoduce {
-    margin-top: 30px;
-    border-radius: 7px;
-    padding: 30px;
-    background-color: #bad7e8;
+    padding-left: 40%;
 }
 
 .center-group h2, p {
@@ -225,57 +111,6 @@ body {
     color: #EDEFF1 !important;
 }
 
-#loading {
-    margin-top: 2%;
-}
-
-@media (max-width: 992px) {
-    .my-images img {
-        display: none;
-    }
-
-    .img-thumbnail {
-        margin-top: 7%;
-    }
-
-    .thumbnail-detail {
-        top: 30%;
-        left: 4%;
-    }
-
-    .thumbnail-detail h6 {
-        font-size: 34px;
-    }
-
-    .thumbnail-detail h2 a {
-        font-size: 60px;
-    }
-
-    .description {
-        margin-left: 0;
-    }
-
-    .description p {
-        display: none;
-    }
-
-    .description h4 {
-        font-size: 40px;
-    }
-
-    .social {
-        text-align: center;
-    }
-
-    #loading {
-        display: none;
-    }
-
-    .sidebar {
-        padding-left: 0;
-    }
-}
-
 /*CONTACT*/
 .magin-header {
     position: absolute;
@@ -291,6 +126,10 @@ body {
     border-radius: 7px;
 }
 
+.info-contact {
+    font-weight: bold;
+}
+
 .contact-info .info-contact, p {
     text-align: left;
 }
@@ -300,5 +139,24 @@ body {
 }
 
 .contact-heading {
-    font-family: "Luckiest Guy", sans-serif;
+    font-family: 'Risque', cursive;
+    color: white;
+}
+
+.form-contact h2 {
+    color: white;
+}
+
+#mes {
+    height: 178px;
+}
+
+@media (max-width: 992px) {
+    .contact-info {
+        display: none;
+    }
+
+    .magin-header {
+        left: 14%;
+    }
 }

@@ -27,11 +27,11 @@ body {
 }
 
 #title-news {
-    font-family: "Luckiest Guy", sans-serif;
+    font-family: 'Pacifico', cursive;
     color: white;
     font-size: 350%;
     padding-top: 20%;
-    padding-left: 45%;
+    padding-left: 40%;
 }
 
 .news-margin {
@@ -255,5 +255,9 @@ body {
 
     #share {
         text-align: center;
+    }
+
+    .fixed-banner {
+        left: 14%;
     }
 }

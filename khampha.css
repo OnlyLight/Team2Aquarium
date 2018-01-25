@@ -1,7 +1,10 @@
 body{
 	background-color: #000874;
 }
-#khampha .row{
+.as{
+	color: white;
+}
+.khampha .row{
 	position: relative;
 	color: white;
 }
@@ -20,6 +23,7 @@ body{
 	width: 100%;
 	height: 213px;
 	border-radius: 10px;
+
 }
 .img-bach-tuoc{
 	text-align: center;
@@ -32,11 +36,19 @@ body{
 .anh{
 	font-family: 'Josefin Sans', sans-serif;
 }
-
+.ad{
+	border: 1px solid white;
+}
+.mau{
+	color: white;
+}
+.mau:hover{
+	color: #03a9f4;
+}
 @media (max-width: 768px) {
 	.img-bach-tuoc {
 		margin-left: 130px;
 		text-align: center;
-
 	}
+
 }

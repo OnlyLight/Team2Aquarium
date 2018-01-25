@@ -1,7 +1,6 @@
 body {
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: url("../images/background.jpg") no-repeat center center;
+    background-size: cover;
     color: white;
     background-color: #023f88;
     font-family: 'Rokkitt', serif;
@@ -31,17 +30,7 @@ img{
     position: relative;
     margin-left: 30px;
 }
-#sealife::after{
-	content: "";
-    display: block;
-    width: 100%;
-    height: 46px;
-    background-image: url("../images/icon-plus.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 265px;
-    top: 33px;
-}
+
 #sealife img{
     margin-left: 80px;
 }

@@ -10,5 +10,7 @@
     transition-duration: .2s;  
 }
 .back{
-	background-image: url("");
+	background-image: url("img/back.jpg");
+	background-position-y: center;
+	background-size: 100% auto;
 }

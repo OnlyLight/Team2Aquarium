@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/ticket.css">
+    <link rel="stylesheet" href="css/chat-onl.css">
     <link rel="stylesheet" href="css/home.css">
     <!-- Angular JS -->
     <script src="js/angular.min.js"></script>
@@ -17,6 +18,7 @@
     <!-- Font Google -->
     <link href="css/font-custom.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    
 </head>
 
 <body ng-app="">
@@ -322,6 +324,7 @@
             </div>
         </div>
     </div>
+    <div ng-include="'common/chat_onl.html'"></div>
 </div>
 <!-- Optional JavaScript -->
 <!--Javascrip-->
@@ -342,9 +345,10 @@
                 $("header").removeClass("scroll-down");
             }
         });
+        $("#chat-onl").click(function () {
+            $(this).toggleClass("open");
+        });
     });
 </script>
-
 </body>
-
 </html>

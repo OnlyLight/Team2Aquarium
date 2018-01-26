@@ -5,6 +5,7 @@
     <title>Aquarium</title>
     <!--Bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/chat-onl.css">
     <link rel="stylesheet" href="css/news-ver3-detail.css">
     <link rel="stylesheet" href="css/home.css">
     <!-- Angular JS -->
@@ -162,6 +163,7 @@
                 </div>
             </div>
         </div>
+        <div ng-include="'common/chat_onl.html'"></div>
     </div>
     <!--Javascrip-->
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -180,6 +182,9 @@
                 } else {
                     $("header").removeClass("scroll-down");
                 }
+            });
+            $("#chat-onl").click(function () {
+                $(this).toggleClass("open");
             });
         });
     </script>

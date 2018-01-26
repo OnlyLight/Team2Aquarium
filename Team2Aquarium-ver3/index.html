@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/chat-onl.css">
     <!-- Angular JS -->
     <script src="js/angular.min.js"></script>
     <!-- Font Awesome -->
@@ -200,6 +201,7 @@
                 </div>
             </div>
         </div>
+        <div ng-include="'common/chat_onl.html'"></div>
     </section>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
@@ -217,6 +219,9 @@
             } else {
                 $("header").removeClass("scroll-down");
             }
+        });
+        $("#chat-onl").click(function () {
+            $(this).toggleClass("open");
         });
     });
     </script>

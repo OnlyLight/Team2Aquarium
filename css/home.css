@@ -1,0 +1,253 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+}
+.hand-style{
+    font-family: 'Pacifico', cursive;
+}
+.morden-style{
+    font-family: 'Oswald', sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 30;
+    border-bottom: solid 1px rgba(255, 255, 255, .4);
+    transition: all .3s;
+}
+header.scroll-down{
+  background-color: rgba(0, 0, 0, .6);
+  border-bottom: solid 1px transparent;
+}
+#background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -99;
+    background: url('../images/background-top.jpg') no-repeat top;
+    filter: brightness(90%);
+}
+nav ul li a{
+    color: white!important;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.1rem;
+    position: relative;
+
+}
+nav ul li a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: white;
+  height: 1px;
+  transition: all .3s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+.navbar-toggler-icon{border:1px solid white}
+section#hello{
+  position: relative;
+}
+section#hello h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    color: white;
+}
+
+section#hello small a {
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-decoration: none;
+    transition: all .3s;
+}
+.btn-custom {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    transition: all .3s;
+}
+.btn-custom:hover{
+  color: black;
+  background-color: white;
+  text-decoration: none;
+}
+section#hello h6 {
+    color: white;
+    letter-spacing: .3rem;
+    line-height: 1.9rem;
+}
+section#explore{
+    background-color: white;
+    position: relative;
+}
+section#explore::before{
+  position: absolute;
+  content: "CÁC LOÀI ĐỘNG VẬT";
+  bottom: 50%;
+  left: 5%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  color: #222222;
+  background-color: white;
+  padding: .5rem .4rem 0 .4rem;
+  transition: all .5s;
+}
+section#explore:hover::before{
+  bottom: 100%;
+}
+section#explore .carousel-control-prev,.carousel-control-next{
+    width: 5%;
+}
+.item-slide{
+    overflow: hidden;
+
+}
+.item-slide::before,.item-slide::after, .right-out, .bottom-out{
+  background-color: rgba(255, 255, 255, .4);
+  transition: all .3s;
+  transition-delay: .2s;
+  position: absolute;
+  content: "";
+}
+.item-slide::after{
+  width: 100%;
+  top: 0;
+  left: 0%;
+  height: 10%;
+}
+.item-slide::before{
+  width: 10%;
+  bottom: 0;
+  left: 0%;
+  height: 90%;
+  z-index: 1;
+}
+.right-out{
+  bottom: 0;
+  right: 0;
+  height: 90%;
+  width: 10%;
+}
+.bottom-out{
+  bottom: 0;
+  left: 10%;
+  height: 10%;
+  width: 80%;
+}
+.item-slide:hover::after{
+  height: 0%;
+}
+.item-slide:hover::before,.item-slide:hover .right-out{
+  width: 0%;
+  height: 100%;
+}
+.item-slide:hover .bottom-out{
+  height: 0;
+  width: 100%;
+  left: 0;
+}
+.item-bg{
+    overflow: hidden;
+}
+.item-bg img{
+    transform: scale(1.3);
+    transition: all .8s ease-in-out;
+}
+.item-slide:hover .item-bg img{
+    transform: scale(1);
+}
+.item-slide:hover .item-content{
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+}
+.item-content{
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background-color: transparent;
+  transition: width .3s, height .3s, border .6s .2s;
+  border: .4rem solid white;
+}
+.item-content h3{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+}
+.item-content h4{
+  position: absolute;
+  bottom: 0;
+  color: white;
+  left: 0;
+  right: 0;
+}
+#intro{background-color:white}
+#intro h2,a,h6{
+  color: white;
+}
+#intro p{
+  color: lightgray;
+}
+#intro-ticket{
+  background: url('../images/explore-bg2.jpg') no-repeat center center;
+  background-size: cover;
+}
+#intro-place{
+  background: url('../images/explore-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+#intro-place div{
+  background-color: rgba(0, 0, 0, .2);
+}
+#intro-ticket div{
+  background-color: rgba(0, 0, 0, .3);
+}
+#contact-us{
+  background: url('../images/contact-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+#contact, #contact a{
+  color: white;
+}
+#contact input,#contact button,#contact textarea{
+  background-color: transparent;
+  color: white;
+  border-radius: 0;
+}
+#contact button{
+  border: 2px solid white;
+  cursor: pointer;
+}
+#contact button:hover{
+  background-color: white;
+  color: black;
+}
+#contact input::placeholder, #contact textarea::placeholder{
+  color: white;
+}
+#contact-us h3, #write-us h3{
+  border-bottom: 1px solid white;
+}
+#write-us{
+  background: url('../images/writeus-bg.jpg') no-repeat center center;
+  background-size: cover;
+}

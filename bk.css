@@ -14,3 +14,41 @@
 	background-position-y: center;
 	background-size: 100% auto;
 }
+.species-explore {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	color: white;
+	font-weight: bold;
+}
+.species-explore i {
+	vertical-align: center;
+	float: right;
+	font-weight: bold;
+}
+.title-content h2,
+h1 {
+	font-family: 'Rokkitt', serif;
+	color: white;
+	font-weight: bold;
+}
+.love-explore {
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: white;
+	font-weight: bold;
+	font-size: 140%;
+}
+
+.love-explore i {
+	vertical-align: center;
+	font-size: 150%;
+	font-weight: bold;
+}
+@media (max-width: 768px) {
+	#title{
+
+	}
+}

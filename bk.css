@@ -1,6 +1,7 @@
 .hover{
 	overflow: hidden;
 	cursor: pointer;
+	border: 4px solid white;
 }
 .hover img{
 	transition: all 0.3s;

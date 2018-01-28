@@ -1,13 +1,14 @@
 #chat-onl {
     position: fixed;
     width: 320px;
+    height: 401.17px;
     bottom: -363px;
     right: 30px;
     color: black;
     transition: .3s;
 }
 .open{
-    bottom: 0!important;
+    bottom: 2%!important;
 }
 
 #message {
@@ -46,7 +47,7 @@
     font-weight: bold;
 }
 
-.chat-web {
+.chat-web p {
     width: 100%;
     font-family: 'Pacifico', cursive;
     height: 220px;

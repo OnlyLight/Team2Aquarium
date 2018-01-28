@@ -1,5 +1,5 @@
 body {
-    background-color: #7d8ebc;
+    background-color: #00609b;
 }
 
 .banner {
@@ -23,7 +23,7 @@ body {
     bottom: -10%;
     width: 100%;
     height: 200px;
-    background: linear-gradient(transparent,rgba(125, 142, 188, 1),rgba(125, 142, 188, 1),rgba(125, 142, 188, 1));
+    background: linear-gradient(transparent,rgba(0, 96, 155, 1),rgba(0, 96, 155, 1),rgba(0, 96, 155, 1));
 }
 
 #title-news {
@@ -60,8 +60,8 @@ body {
 
 .thumbnail-detail {
     position: absolute;
-    top: 4%;
-    left: 15%;;
+    left: 15%;
+    margin-top: -46%;
     text-align: center;
 }
 
@@ -207,9 +207,7 @@ body {
 }
 
 .fixed-banner {
-    position: absolute;
-    top: 75%;
-    left: 8%;
+    margin-top: -10%;
 }
 
 @media (max-width: 992px) {
@@ -222,7 +220,6 @@ body {
     }
 
     .thumbnail-detail {
-        top: 30%;
         left: 4%;
     }
 
@@ -255,9 +252,5 @@ body {
 
     #share {
         text-align: center;
-    }
-
-    .fixed-banner {
-        left: 14%;
     }
 }

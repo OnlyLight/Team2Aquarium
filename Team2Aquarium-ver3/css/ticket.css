@@ -1,7 +1,6 @@
 body {
-    background-image: url("../../Team2Aquarium-ver3/images/images-nguyen/background.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: url("../../Team2Aquarium-ver3/images/images-nguyen/background.jpg") no-repeat;
+    background-size: 100%;
     color: white;
     background-color: #023f88;
     font-family: 'Rokkitt', serif;
@@ -29,21 +28,6 @@ img{
 }
 #sealife {
     position: relative;
-    margin-left: 30px;
-}
-#sealife::after{
-	content: "";
-    display: block;
-    width: 100%;
-    height: 46px;
-    background-image: url("../../Team2Aquarium-ver3/images/images-nguyen/icon-plus.png");
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 265px;
-    top: 33px;
-}
-#sealife img{
-    margin-left: 80px;
 }
 .sealife {
 	    background: radial-gradient(ellipse at center, rgba(108,183,218,0.9) 20%, rgba(108,183,218,0.4) 50%, rgba(108,183,218,0) 70%);
@@ -200,15 +184,14 @@ hr {
     border-radius: 5px;
     overflow: hidden;
     float: right;
-    margin-left: 400px;
-    margin-right: -400px;
+    margin: auto;
 }
 .shadow {
     position: absolute;
     left: 0;
     top: 0;
     height: 100%;
-    width: 60%;
+    width: 100%;
     background: -webkit-gradient(linear, left top, right top, from(rgba(0,0,0,0.6)), to(transparent));
     background: linear-gradient(to right, rgba(0,0,0,0.6), transparent);
 }
@@ -222,9 +205,10 @@ hr {
     color: white;
 }
 .promo-tile {
-    padding: 15px 15px 15px 15px;
+    padding: 15px 15px 12px 15px;
     background-color: rgba(219,242,250,0.85);
     border-radius: 10px;
+    color: black;
 }
 .promo-tile .title{
     font-family: 'Oswald', sans-serif;
@@ -233,10 +217,6 @@ hr {
     text-transform: uppercase;
     color: #023f88;
     font-weight: 700;
-}
-.promo-tile {
-	color: black;
-	margin-bottom: 5px;
 }
 .des-image img{
 	position: relative;

@@ -113,9 +113,7 @@ body {
 
 /*CONTACT*/
 .magin-header {
-    position: absolute;
-    top: 75%;
-    left: 8%;
+    margin-top: -10%;
 }
 
 .magin-content {
@@ -154,9 +152,5 @@ body {
 @media (max-width: 992px) {
     .contact-info {
         display: none;
-    }
-
-    .magin-header {
-        left: 14%;
     }
 }

@@ -110,7 +110,7 @@ section#explore::before{
 section#explore:hover::before{
   bottom: 100%;
 }
-section#explore .carousel-control-prev,.carousel-control-next{
+.carousel-control-prev,.carousel-control-next{
     width: 5%;
 }
 .item-slide{
@@ -120,7 +120,7 @@ section#explore .carousel-control-prev,.carousel-control-next{
 .item-slide::before,.item-slide::after, .right-out, .bottom-out{
   background-color: rgba(255, 255, 255, .4);
   transition: all .3s;
-  transition-delay: .2s;
+  transition-delay: .1s;
   position: absolute;
   content: "";
 }
@@ -175,6 +175,13 @@ section#explore .carousel-control-prev,.carousel-control-next{
   width: 100%;
   height: 100%;
   border: 1px solid transparent;
+
+}
+#review .item-slide:hover .item-content{
+  background-color: rgba(0, 0, 0, .5);
+}
+#review .item-slide:hover p{
+  opacity: 1;
 }
 .item-content{
   width: 80%;
@@ -183,8 +190,14 @@ section#explore .carousel-control-prev,.carousel-control-next{
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
   background-color: transparent;
-  transition: width .3s, height .3s, border .6s .2s;
+  transition: width .3s, height .3s, border .6s, background .6s;
   border: .4rem solid white;
+}
+section#explore .item-content{
+  background-color: rgba(0, 0, 0, .2);
+}
+section#explore .item-slide:hover .item-content{
+  background-color: transparent;
 }
 .item-content h3{
   position: absolute;
@@ -192,6 +205,17 @@ section#explore .carousel-control-prev,.carousel-control-next{
   left: 0;
   right: 0;
   color: white;
+}
+#review p{
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  top: 0; left: 0; bottom: 0; right: 0;
+  margin: auto;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: .5s;
 }
 .item-content h4{
   position: absolute;
@@ -249,5 +273,44 @@ section#explore .carousel-control-prev,.carousel-control-next{
 }
 #write-us{
   background: url('../images/writeus-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+section#review{
+  position: relative;
+}
+section#review::before{
+  position: absolute;
+  content: "REVIEW KHÁCH DU LỊCH";
+  bottom: 50%;
+  left: 5%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+  color: #222222;
+  background-color: white;
+  padding: .5rem .4rem 0 .4rem;
+  transition: all .5s;
+  box-shadow: 3px -2px 6px rgba(0,0,0,0.16), 3px -2px 6px rgba(0,0,0,0.23);
+}
+section#review:hover::before{
+  bottom: 100%;
+}
+section#news{
+  
+}
+#news .card-body{
+  background-color: #BAD7E8;
+}
+#news .card-title{
+  color: #023F88;
+}
+#news .btn,#news .card, #news .card-img-top{border-radius:0;border:none; }
+#news h1{
+  color: white;
+}
+#news .row{position:relative;
+  background-color: rgba(0, 0, 0, .3);
+}
+#news-bg{
+  background: url('../images/news-back.jpg') no-repeat center center;
   background-size: cover;
 }

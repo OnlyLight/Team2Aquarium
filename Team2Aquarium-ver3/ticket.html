@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/chat-onl.css">
     <link rel="stylesheet" href="css/ticket.css">
     <link rel="stylesheet" href="css/home.css">
-    <!--Angular JS-->
+    <!-- Angular JS -->
     <script src="js/angular.min.js"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -328,7 +328,6 @@
             </div>
         </div>
     </div>
-    <div ng-include="'common/chat_onl.html'"></div>
 </div>
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -339,6 +338,17 @@
     <script>
     jQuery.scrollSpeed(100, 800);
     $(document).ready(function() {
+        setInterval(function() {
+            var d = new Date();
+            var h = d.getHours();
+            if (h >= 8 && h <= 20) {
+                $(".status").text("ĐANG MỞ CỬA");
+                $(".status").removeClass("offline");
+            } else {
+                $(".status").text("ĐANG ĐÓNG CỬA");
+                $(".status").addClass("offline");
+            }
+        }, 1000);
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
                 $("header").addClass("scroll-down");
@@ -346,11 +356,9 @@
                 $("header").removeClass("scroll-down");
             }
         });
-        $("#btn-chat-onl").click(function () {
-            $("#chat-onl").toggleClass("open");
-        });
     });
     </script>
+
 </body>
 
 </html>

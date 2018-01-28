@@ -16,17 +16,7 @@ body {
 	height: 200px;
 	background: linear-gradient(transparent,rgba(0, 96, 155, 1),rgba(0, 96, 155, 1),rgba(0, 96, 155, 1));
 }
-.bd{
-	width: 257%;
 
-}
-#myModal{
-	padding-right: 52%;
-}
-.border-bb img{
-	border-radius: 10px;
-
-}
 
 .hover{
 	overflow: hidden;

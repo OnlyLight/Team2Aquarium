@@ -328,27 +328,19 @@
             </div>
         </div>
     </div>
+    <div ng-include="'common/chat_onl.html'"></div>
 </div>
 <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jQuery.scrollSpeed.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jQuery.scrollSpeed.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script>
     jQuery.scrollSpeed(100, 800);
+
     $(document).ready(function() {
-        setInterval(function() {
-            var d = new Date();
-            var h = d.getHours();
-            if (h >= 8 && h <= 20) {
-                $(".status").text("ĐANG MỞ CỬA");
-                $(".status").removeClass("offline");
-            } else {
-                $(".status").text("ĐANG ĐÓNG CỬA");
-                $(".status").addClass("offline");
-            }
-        }, 1000);
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
                 $("header").addClass("scroll-down");
@@ -356,8 +348,11 @@
                 $("header").removeClass("scroll-down");
             }
         });
+        $("#btn-chat-onl").click(function () {
+            $("#chat-onl").toggleClass("open");
+        });
     });
-    </script>
+</script>
 
 </body>
 

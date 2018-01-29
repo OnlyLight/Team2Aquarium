@@ -330,7 +330,7 @@ footer li{color: rgba(255, 255, 255, .5)!important;}
 footer p, footer a, footer h5{
   color: rgba(255, 255, 255, .9)!important;
 }
-footer .row{background-color: #0E0E0E;}
+footer > .row{background-color: #0E0E0E;}
 footer hr{
   background-color:rgba(255, 255, 255, .9);
 }

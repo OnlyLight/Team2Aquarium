@@ -113,14 +113,13 @@ body {
 
 /*CONTACT*/
 .magin-header {
-    margin-top: -10%;
+    margin-top: -20%;
 }
 
 .magin-content {
     background-color: #bad7e8;
-    margin: 0 0;
-    padding-top: 2%;
-    padding-left: 2%;
+    margin: 5% 0;
+    padding: 3% 2%;
     border-radius: 7px;
 }
 
@@ -152,5 +151,9 @@ body {
 @media (max-width: 992px) {
     .contact-info {
         display: none;
+    }
+
+    .form-contact h2 {
+        margin-top: 6%;
     }
 }

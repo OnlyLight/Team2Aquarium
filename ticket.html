@@ -58,7 +58,7 @@
             <h2 class="p-md-3 pt-5">experience the best of sydney and save</h2>
             <div class="row">
                 <div class="card h-100 col-md-4 px-md-3 mt-3 mt-md-0 text-center">
-                    <div class="card0 pt-md-4 px-md-4 p-3">
+                    <div class="card1 pt-md-4 px-md-4 p-3">
                         <p class="card-title">LA ROCHELLE BIG TICKET CHO 2 NGƯỜI</p>
                         <small>Tiết kiệm $34</small>
                     </div>
@@ -337,24 +337,95 @@
           <h4 class="modal-title">Đặt vé</h4>
         </div>
         <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="email">Email:</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#step1">Bước 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#step2">Bước 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#step3">Bước 3</a>
+                </li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="step1" class="container tab-pane active"><br>
+                    <h4>Thông tin vé</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Loại vé</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>LA ROCHELLE BIG TICKET CHO 2 NGƯỜI</td>
+                                <td>$50</td>
+                                <td>
+                                    <select class="form-control">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h4>Ngày</h4>
+                    <form class="form-horizontal" method="post">
+                        <div class="form-group ">
+                            <div class="col-md-10">
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="step2" class="container tab-pane fade"><br>
+                    <h4>Thông tin cơ bản và liên hệ</h4>
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Họ và tên:</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="adr">Địa chỉ:</label>
+                                <input type="text" class="form-control" id="adr" placeholder="Enter your address" name="adr">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại:</label>
+                                <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" name="phone">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="step3" class="container tab-pane fade"><br>
+                    <h4>Menu 2</h4>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
+                <div id="step4" class="container tab-pane fade"><br>
+                    <h4>Thanh toán</h4>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                </div>
             </div>
-            <div class="form-group">
-              <label for="adr">Địa chỉ:</label>
-              <input type="text" class="form-control" id="adr" placeholder="Enter address" name="adr">
-            </div>
-            <div class="form-group">
-              <label for="phone">Số điện thoại:</label>
-              <input type="text" class="form-control" id="phone" placeholder="Enter phone number" name="phone">
-            </div>
-          </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Đặt</button>
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Hủy</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Back</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Next</button>
         </div>
       </div>
       
@@ -389,7 +460,25 @@
         });
     });
     </script>
+<!-- Include jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 
+<!-- Include Date Range Picker -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+<script>
+    $(document).ready(function(){
+        var date_input=$('input[name="date"]'); //our date input has the name "date"
+        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+        date_input.datepicker({
+            format: 'mm/dd/yyyy',
+            container: container,
+            todayHighlight: true,
+            autoclose: true,
+        })
+    })
+</script>
 </body>
 
 </html>

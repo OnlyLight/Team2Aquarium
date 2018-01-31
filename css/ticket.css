@@ -36,7 +36,7 @@ img{
     background-color: #023f88;
     border-color: #023f88;
 }
-#online-ticket .card0{
+#online-ticket .card1{
 	overflow: hidden;
     position: relative;
     height: 110px;
@@ -260,7 +260,9 @@ hr {
 form , .modal-title{
     color: black;
 }
-
+.tab-content {
+    color: black;
+}
 
 
 

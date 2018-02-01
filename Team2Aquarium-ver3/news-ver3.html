@@ -168,14 +168,28 @@
         </div>
         <div ng-include="'common/chat_onl.html'"></div>
     </div>
-    <footer class="container-fluid p-0" ng-include="'common/footer.html'"></footer>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--Javascrip-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jQuery.scrollSpeed.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
-    <script src="js/chat-onl.js"></script>
+    <script>
+        jQuery.scrollSpeed(100, 800);
+
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $("header").addClass("scroll-down");
+                } else {
+                    $("header").removeClass("scroll-down");
+                }
+            });
+            $("#btn-chat-onl").click(function () {
+                $("#chat-onl").toggleClass("open");
+            });
+        });
+    </script>
 </body>
 </html>

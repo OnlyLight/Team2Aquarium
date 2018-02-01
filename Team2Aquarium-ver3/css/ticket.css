@@ -22,7 +22,6 @@ body {
 }
 #ticket-content{
     margin-top: 100px;
-    margin-bottom: 5%;
 }
 img{
 	width:100%;
@@ -33,11 +32,8 @@ img{
 .sealife {
 	    background: radial-gradient(ellipse at center, rgba(108,183,218,0.9) 20%, rgba(108,183,218,0.4) 50%, rgba(108,183,218,0) 70%);
 }
-#online-ticket .card {
-    background-color: #023f88;
-    border-color: #023f88;
-}
-#online-ticket .card0{
+
+#online-ticket .card{
 	overflow: hidden;
     position: relative;
     height: 110px;
@@ -257,9 +253,6 @@ hr {
 .btn-danger{
     background-color: #E75405;
     margin-left: 10px;
-}
-form , .modal-title{
-    color: black;
 }
 
 

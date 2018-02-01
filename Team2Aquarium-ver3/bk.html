@@ -36,7 +36,11 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="row mx-lg-5">
+<<<<<<< HEAD
                 <div class="row">
+=======
+                <div class="row" style="margin-top: -10%;">
+>>>>>>> dfc7895adc0c3feb6d05c35d32a9f07c22104666
                     <div class="col-12 col-md-8 px-lg-0">
                         <div class="hover"><button type="button"  data-toggle="modal" data-target="#myModal">
                             <img src="images/img-chien/clown-fish.jpg" class="img-fluid">
@@ -425,28 +429,14 @@
 
     <div ng-include="'common/chat_onl.html'"></div>
 </section>
-<!--Javascrip-->
+<footer class="container-fluid" ng-include="'common/footer.html'"></footer>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/jQuery.scrollSpeed.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/swiper.min.js"></script>
-<script>
-    jQuery.scrollSpeed(100, 800);
-
-    $(document).ready(function() {
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $("header").addClass("scroll-down");
-            } else {
-                $("header").removeClass("scroll-down");
-            }
-        });
-        $("#btn-chat-onl").click(function () {
-            $("#chat-onl").toggleClass("open");
-        });
-    });
-</script>
+<script src="js/chat-onl.js"></script>
 </body>
 </html>

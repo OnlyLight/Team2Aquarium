@@ -55,7 +55,7 @@
                                 <li>Intimate 2 course dinner including main and dessert. <a href="#"><u>View menu</u></a></li>
                                 <li>3 hour drinks package including sparkling wine, beer and soft drinks.</li>
                             </ul>
-                            <p><a href="#"><u>BOOK TICKETS HERE</u></a></p>
+                            <p><a href="ticket.html"><u>BOOK TICKETS HERE</u></a></p>
                             <p>*Please note ticket price does not include the Eventbrite booking fee. Tickets are sold per couple (2 people).</p>
                         </div>
                     </div>
@@ -78,13 +78,13 @@
                                 <li>Cocktail food served for the duration of the event Includes cold canapés, hot canapés, hot grazing dishes, dessert canapés. <a href="#"><u>View menu</u></a></li>
                                 <li>3 hour drinks package including sparkling wine, beer and soft drinks</li>
                             </ul>
-                            <p><a href="#"><u>BOOK TICKETS HERE</u></a></p>
+                            <p><a href="ticket.html"><u>BOOK TICKETS HERE</u></a></p>
                             <p>*Please note ticket price does not include the Eventbrite booking fee.</p>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-12 center-group">
+                        <div class="col-lg-12 center-group" id="margin-bottom">
                             <img src="images/img-duy/new-ver3-detail-patch-3.png" alt="">
                             <h4>Penguin Passport to Love</h4>
                             <p>The Penguin Passport to Love is your ticket to a once-in-a-lifetime experience with SEA LIFE Sydney Aquarium's most romantic and faithful creatures, our sub-Antarctic colony of Gentoo & King Penguins.</p>
@@ -102,7 +102,7 @@
                                 <li>Intimate 3 course dinner including entree, main and dessert in penguin viewing area (6pm – 8pm). <a href="#"><u>View menu</u></a></li>
                                 <li>2 hour drinks package including sparkling wine, beer and soft drinks</li>
                             </ul>
-                            <p><a href="#"><u>BOOK TICKETS HERE</u></a></p>
+                            <p><a href="ticket.html"><u>BOOK TICKETS HERE</u></a></p>
                             <p>*Please note ticket price does not include the Eventbrite booking fee. Tickets are sold per couple (2 people).</p>
                             <p><b>Terms & Conditions / Important Information</b></p>
                             <ul>
@@ -132,12 +132,12 @@
                         </div>
                         <div class="thumbnail-detail">
                             <h6>LEARN MORE ABOUT OUR</h6>
-                            <h2><a href="#">Multiple Attraction Tickets</a></h2>
+                            <h2><a href="ticket.html">Multiple Attraction Tickets</a></h2>
                         </div>
                     </div>
 
                     <div class="link-position">
-                        <a href="#">
+                        <a href="help.html">
                             <h4>Plan Your Visit</h4>
                             <h2>Getting Here</h2>
                         </a>
@@ -165,28 +165,14 @@
         </div>
         <div ng-include="'common/chat_onl.html'"></div>
     </div>
-    <!--Javascrip-->
+    <footer class="container-fluid p-0" ng-include="'common/footer.html'"></footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jQuery.scrollSpeed.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/swiper.min.js"></script>
-    <script>
-        jQuery.scrollSpeed(100, 800);
-
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                if ($(document).scrollTop() > 50) {
-                    $("header").addClass("scroll-down");
-                } else {
-                    $("header").removeClass("scroll-down");
-                }
-            });
-            $("#btn-chat-onl").click(function () {
-                $("#chat-onl").toggleClass("open");
-            });
-        });
-    </script>
+    <script src="js/chat-onl.js"></script>
 </body>
 </html>

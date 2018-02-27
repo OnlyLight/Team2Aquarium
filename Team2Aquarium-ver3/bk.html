@@ -432,21 +432,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/swiper.min.js"></script>
-<script>
-    jQuery.scrollSpeed(100, 800);
-
-    $(document).ready(function() {
-        $(window).scroll(function() {
-            if ($(document).scrollTop() > 50) {
-                $("header").addClass("scroll-down");
-            } else {
-                $("header").removeClass("scroll-down");
-            }
-        });
-        $("#btn-chat-onl").click(function () {
-            $("#chat-onl").toggleClass("open");
-        });
-    });
-</script>
+<script src="js/chat-onl.js"></script>
 </body>
 </html>

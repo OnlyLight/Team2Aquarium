@@ -26,11 +26,12 @@ body {
 }
 #myModal{
 	padding-right: 52%;
+	border: none!important;
+	outline: none!important;
 }
 .hover{
 	overflow: hidden;
 	cursor: pointer;
-	border: 4px solid w;
 }
 .hover img{
 	transition: all 0.3s;

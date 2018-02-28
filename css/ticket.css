@@ -73,7 +73,6 @@ img{
 	background-image: -ms-linear-gradient(to bottom, #012c5f 50%, rgba(219,242,250,0.85) 50%); 
 }
 .img2 {
-    height: 151.38px;
 	padding: 0 10% 0 10%;
 	display: block;
 	margin-left: auto; 
@@ -81,6 +80,9 @@ img{
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #f58220), color-stop(50%, rgba(219,242,250,0.85)));
 	background-image:linear-gradient(to bottom, #f58220 50%, rgba(219,242,250,0.85) 50%);
 	background-image: -ms-linear-gradient(to bottom, #f58220 50%, rgba(219,242,250,0.85) 50%); 
+}
+.img2 #mostimg{
+        height: 151.38px;
 }
 .img3 {
 	padding: 0 10% 0 10%;

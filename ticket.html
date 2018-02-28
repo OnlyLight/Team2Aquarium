@@ -17,6 +17,18 @@
     <!-- Font Google -->
     <link href="css/font-custom.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <script>
+         var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope) {
+            $scope.Customer = {  Loại vé: "", Giá: "", Số lượng: "" };
+            $scope.showInfor = false;
+            $scope.myFunction = function () {
+                $scope.showInfor = !$scope.showInfor;
+
+            }
+
+        });
+    </script>
 </head>
 
 <body ng-app="">
@@ -558,8 +570,7 @@
                     </div>
                 </div>
                 <div id="step3" class="container tab-pane fade"><br>
-                    <h4>Menu 2</h4>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    
                 </div>
                 <div id="step4" class="container tab-pane fade"><br>
                     <h4>Hình thức thanh toán</h4>

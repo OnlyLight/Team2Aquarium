@@ -207,7 +207,11 @@ body {
 }
 
 .fixed-banner {
-    margin-top: -10%;
+    margin-top: -17%;
+}
+
+#margin-bottom {
+    margin-bottom: 5%;
 }
 
 @media (max-width: 992px) {

@@ -18,11 +18,11 @@ header {
     transition: all .3s;
 }
 header.scroll-down, header:hover{
-  background-color: rgba(0, 0, 0, .6);
-  border-bottom: solid 1px transparent;
+    background-color: rgba(0, 0, 0, .6);
+    border-bottom: solid 1px transparent;
 }
 #logo, header .row{
-  transition: all .7s;
+    transition: all .7s;
 }
 #background-img {
     position: absolute;
@@ -42,24 +42,24 @@ nav ul li a{
 
 }
 nav ul li a::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: white;
-  height: 1px;
-  transition: all .3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: white;
+    height: 1px;
+    transition: all .3s;
 }
 nav ul li a:hover::after {
-  width: 100%;
+    width: 100%;
 }
 .navbar-toggler-icon{border:1px solid white}
 section#hello{
-  position: relative;
+    position: relative;
 }
 section#hello h1 {
     font-family: 'Pacifico', cursive;
@@ -75,35 +75,35 @@ section#hello small a {
     transition: all .3s;
 }
 @keyframes arrow-down {
-  0% {
-    transform: translateY(0px); opacity: 0;
-  }
-  50%{
-    transform: translateY(15px); opacity: 1;
-  }
-  100%{
-    transform: translateY(20px);opacity: 0;
-  }
+    0% {
+        transform: translateY(0px); opacity: 0;
+    }
+    50%{
+        transform: translateY(15px); opacity: 1;
+    }
+    100%{
+        transform: translateY(20px);opacity: 0;
+    }
 }
 #search form{
-  position: absolute;
-  top: 100%;
-  right: 0;
-  display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
 }
 #search input{
-  width: 300px;
-  border-radius: 0!important;
+    width: 300px;
+    border-radius: 0!important;
 }
 #search button{
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: transparent;
 }
 section#hello h6 i{
-  animation: arrow-down 1.5s infinite;
-  color: white;
+    animation: arrow-down 1.5s infinite;
+    color: white;
 }
 .btn-custom {
     display: inline-block;
@@ -116,9 +116,9 @@ section#hello h6 i{
     transition: all .3s;
 }
 .btn-custom:hover{
-  color: black;
-  background-color: white;
-  text-decoration: none;
+    color: black;
+    background-color: white;
+    text-decoration: none;
 }
 section#hello h6 {
     color: white;
@@ -130,19 +130,19 @@ section#explore{
     position: relative;
 }
 section#explore::before{
-  position: absolute;
-  content: "CÁC LOÀI ĐỘNG VẬT";
-  bottom: 50%;
-  left: 5%;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2rem;
-  color: #222222;
-  background-color: white;
-  padding: .5rem .4rem 0 .4rem;
-  transition: all .5s;
+    position: absolute;
+    content: "CÁC LOÀI ĐỘNG VẬT";
+    bottom: 50%;
+    left: 5%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    color: #222222;
+    background-color: white;
+    padding: .5rem .4rem 0 .4rem;
+    transition: all .5s;
 }
 section#explore:hover::before{
-  bottom: 100%;
+    bottom: 100%;
 }
 .carousel-control-prev,.carousel-control-next{
     width: 5%;
@@ -152,48 +152,48 @@ section#explore:hover::before{
 
 }
 .item-slide::before,.item-slide::after, .right-out, .bottom-out{
-  background-color: rgba(255, 255, 255, .4);
-  transition: all .3s;
-  transition-delay: .1s;
-  position: absolute;
-  content: "";
+    background-color: rgba(255, 255, 255, .4);
+    transition: all .3s;
+    transition-delay: .1s;
+    position: absolute;
+    content: "";
 }
 .item-slide::after{
-  width: 100%;
-  top: 0;
-  left: 0%;
-  height: 10%;
+    width: 100%;
+    top: 0;
+    left: 0%;
+    height: 10%;
 }
 .item-slide::before{
-  width: 10%;
-  bottom: 0;
-  left: 0%;
-  height: 90%;
-  z-index: 1;
+    width: 10%;
+    bottom: 0;
+    left: 0%;
+    height: 90%;
+    z-index: 1;
 }
 .right-out{
-  bottom: 0;
-  right: 0;
-  height: 90%;
-  width: 10%;
+    bottom: 0;
+    right: 0;
+    height: 90%;
+    width: 10%;
 }
 .bottom-out{
-  bottom: 0;
-  left: 10%;
-  height: 10%;
-  width: 80%;
+    bottom: 0;
+    left: 10%;
+    height: 10%;
+    width: 80%;
 }
 .item-slide:hover::after{
-  height: 0%;
+    height: 0%;
 }
 .item-slide:hover::before,.item-slide:hover .right-out{
-  width: 0%;
-  height: 100%;
+    width: 0%;
+    height: 100%;
 }
 .item-slide:hover .bottom-out{
-  height: 0;
-  width: 100%;
-  left: 0;
+    height: 0;
+    width: 100%;
+    left: 0;
 }
 .item-bg{
     overflow: hidden;
@@ -206,165 +206,165 @@ section#explore:hover::before{
     transform: scale(1);
 }
 .item-slide:hover .item-content{
-  width: 100%;
-  height: 100%;
-  border: 1px solid transparent;
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
 
 }
 #review .item-slide:hover .item-content{
-  background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .5);
 }
 #review .item-slide:hover p{
-  opacity: 1;
+    opacity: 1;
 }
 .item-content{
-  width: 80%;
-  height: 80%;
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
-  background-color: transparent;
-  transition: width .3s, height .3s, border .6s, background .6s;
-  border: .4rem solid white;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: transparent;
+    transition: width .3s, height .3s, border .6s, background .6s;
+    border: .4rem solid white;
 }
 section#explore .item-content{
-  background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .2);
 }
 section#explore .item-slide:hover .item-content{
-  background-color: transparent;
+    background-color: transparent;
 }
 .item-content h3{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
 }
 #review p{
-  position: absolute;
-  width: 80%;
-  height: 50%;
-  top: 0; left: 0; bottom: 0; right: 0;
-  margin: auto;
-  color: white;
-  text-align: center;
-  opacity: 0;
-  transition: .5s;
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: auto;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: .5s;
 }
 .item-content h4{
-  position: absolute;
-  bottom: 0;
-  color: white;
-  left: 0;
-  right: 0;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    left: 0;
+    right: 0;
 }
 #intro{background-color:white}
 #intro h2,a,h6{
-  color: white;
+    color: white;
 }
 #intro p{
-  color: lightgray;
+    color: lightgray;
 }
 #intro-ticket{
-  background: url('../images/explore-bg2.jpg') no-repeat center center;
-  background-size: cover;
+    background: url('../images/explore-bg2.jpg') no-repeat center center;
+    background-size: cover;
 }
 #intro-place{
-  background: url('../images/explore-bg.jpg') no-repeat center center;
-  background-size: cover;
+    background: url('../images/explore-bg.jpg') no-repeat center center;
+    background-size: cover;
 }
 #intro-place div{
-  background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .2);
 }
 #intro-ticket div{
-  background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .3);
 }
 #contact-us{
-  background: url('../images/contact-bg.jpg') no-repeat center center;
-  background-size: cover;
+    background: url('../images/contact-bg.jpg') no-repeat center center;
+    background-size: cover;
 }
 #contact, #contact a{
-  color: white;
+    color: white;
 }
 #contact input,#contact button,#contact textarea{
-  background-color: transparent;
-  color: white;
-  border-radius: 0;
+    background-color: transparent;
+    color: white;
+    border-radius: 0;
 }
 #contact button{
-  border: 2px solid white;
-  cursor: pointer;
+    border: 2px solid white;
+    cursor: pointer;
 }
 #contact button:hover{
-  background-color: white;
-  color: black;
+    background-color: white;
+    color: black;
 }
 #contact input::placeholder, #contact textarea::placeholder{
-  color: white;
+    color: white;
 }
 #contact-us h3, #write-us h3{
-  border-bottom: 1px solid white;
+    border-bottom: 1px solid white;
 }
 #write-us{
-  background: url('../images/writeus-bg.jpg') no-repeat center center;
-  background-size: cover;
+    background: url('../images/writeus-bg.jpg') no-repeat center center;
+    background-size: cover;
 }
 section#review{
-  position: relative;
+    position: relative;
 }
 section#review::before{
-  position: absolute;
-  content: "REVIEW KHÁCH DU LỊCH";
-  bottom: 50%;
-  left: 5%;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.2rem;
-  color: #222222;
-  background-color: white;
-  padding: .5rem .4rem 0 .4rem;
-  transition: all .5s;
-  box-shadow: 3px -2px 6px rgba(0,0,0,0.16), 3px -2px 6px rgba(0,0,0,0.23);
+    position: absolute;
+    content: "REVIEW KHÁCH DU LỊCH";
+    bottom: 50%;
+    left: 5%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    color: #222222;
+    background-color: white;
+    padding: .5rem .4rem 0 .4rem;
+    transition: all .5s;
+    box-shadow: 3px -2px 6px rgba(0,0,0,0.16), 3px -2px 6px rgba(0,0,0,0.23);
 }
 section#review:hover::before{
-  bottom: 100%;
+    bottom: 100%;
 }
 section#news{
-  
+
 }
 #news .card-body{
-  background-color: #BAD7E8;
+    background-color: #BAD7E8;
 }
 #news .card-title{
-  color: #023F88;
+    color: #023F88;
 }
 #news .btn,#news .card, #news .card-img-top{border-radius:0;border:none; }
 #news .card{
-  box-shadow: 0 0px 28px rgba(0,0,0,0.25), 0 0px 10px rgba(0,0,0,0.22);
-  transition: .3s;
+    box-shadow: 0 0px 28px rgba(0,0,0,0.25), 0 0px 10px rgba(0,0,0,0.22);
+    transition: .3s;
 }
 #news .card:hover{
-  box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.5);
-  transform: translateY(-8px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.5);
+    transform: translateY(-8px);
 }
 #news h1{
-  color: white;
+    color: white;
 }
 #news .row{position:relative;
-  background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .5);
 }
 #news-bg{
-  background: url('../images/news-back.jpg') no-repeat center center;
-  background-size: cover;
+    background: url('../images/news-back.jpg') no-repeat center center;
+    background-size: cover;
 }
 #footer-bg{
-  background: url('../images/footer-bg.jpg') no-repeat center center;
-  background-size: cover;
+    background: url('../images/footer-bg.jpg') no-repeat center center;
+    background-size: cover;
 }
 footer li{color: rgba(255, 255, 255, .5)!important;}
 footer p, footer a, footer h5{
-  color: rgba(255, 255, 255, .9)!important;
+    color: rgba(255, 255, 255, .9)!important;
 }
 footer > .row{background-color: #0E0E0E;}
 footer hr{
-  background-color:rgba(255, 255, 255, .9);
+    background-color:rgba(255, 255, 255, .9);
 }

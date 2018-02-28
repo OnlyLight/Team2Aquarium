@@ -73,6 +73,7 @@ img{
 	background-image: -ms-linear-gradient(to bottom, #012c5f 50%, rgba(219,242,250,0.85) 50%); 
 }
 .img2 {
+    height: 151.38px;
 	padding: 0 10% 0 10%;
 	display: block;
 	margin-left: auto; 
@@ -89,6 +90,9 @@ img{
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #008280), color-stop(50%, rgba(219,242,250,0.85)));
 	background-image:linear-gradient(to bottom, #008280 50%, rgba(219,242,250,0.85) 50%);
 	background-image: -ms-linear-gradient(to bottom, #008280 50%, rgba(219,242,250,0.85) 50%); 
+}
+.card-img-top {
+    height: 200px;
 }
 .img img, .img2 img, .img3 img {
 	border-radius: 5%;
@@ -183,10 +187,10 @@ hr {
 }
 .img-wrap {
 	position: relative;
-    width: 160%;
+    width: 140%;
     border-radius: 5px;
     overflow: hidden;
-    float: right;
+    float: left;
     margin: auto;
 }
 .shadow {
@@ -263,7 +267,9 @@ form , .modal-title{
 .tab-content {
     color: black;
 }
-
+.full-ticket{
+    padding-top: 30px;
+}
 
 
 

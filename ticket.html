@@ -20,7 +20,7 @@
     <script>
          var app = angular.module('myApp', []);
         app.controller('myCtrl', function ($scope) {
-            $scope.Customer = {  Loại vé: "", Giá: "", Số lượng: "" };
+            $scope.Customer = {  Họ và tên: "", Email: "", Địa chỉ: "", Số điện thoại: ""};
             $scope.showInfor = false;
             $scope.myFunction = function () {
                 $scope.showInfor = !$scope.showInfor;
@@ -340,6 +340,7 @@
     </div>
 </div>
 <!-- Modal -->
+<div ng-app="myApp" ng-controller="myCtrl">
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
@@ -552,25 +553,31 @@
                         <form>
                             <div class="form-group">
                                 <label for="name">Họ và tên:</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" ng-model="Customer.Name">
                             </div>
                             <div class="form-group">
                                 <label for="email">Email:</label>
-                                <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email" ng-model="Customer.Email">
                             </div>
                             <div class="form-group">
                                 <label for="adr">Địa chỉ:</label>
-                                <input type="text" class="form-control" id="adr" placeholder="Enter your address" name="adr">
+                                <input type="text" class="form-control" id="adr" placeholder="Enter your address" name="adr" ng-model="Customer.Address">
                             </div>
                             <div class="form-group">
                                 <label for="phone">Số điện thoại:</label>
-                                <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" name="phone">
+                                <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" name="phone" ng-model="Customer.Phone">
                             </div>
                         </form>
                     </div>
                 </div>
                 <div id="step3" class="container tab-pane fade"><br>
-    
+                    <h4>Xác nhận thông tin</h4>
+                    <div id="inner" ng-show="showInfor">
+                        <p>Họ và tên: {{Customer.Name}}</p>
+                        <p>Email: {{Customer.Email}}</p>
+                        <p>Địa chỉ: {{Customer.Address}}</p>
+                        <p>Số điện thoại: {{Customer.Phone}}</p>
+                    </div>
                 </div>
                 <div id="step4" class="container tab-pane fade"><br>
                     <h4>Hình thức thanh toán</h4>
@@ -588,12 +595,13 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Back</button>
-          <button type="button" class="btn btn-primary" data-dismiss="modal">Next</button>
+          <button type="button" class="btn btn-primary" value="Next" ng-click="myFunction()">Next</button>
         </div>
       </div>
       
     </div>
   </div>
+</div>
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>

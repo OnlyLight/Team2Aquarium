@@ -1,4 +1,3 @@
-jQuery.scrollSpeed(100, 800);
 
 $(document).ready(function() {
     $(window).scroll(function() {
@@ -16,5 +15,13 @@ $(document).ready(function() {
     });
     $("#search").mouseleave(function(){
         $("#search form").stop().slideUp('fast');
+    });
+    var date_input=$('input[name="date"]'); //our date input has the name "date"
+    var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+    date_input.datepicker({
+        format: 'mm/dd/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
     });
 });

@@ -5,6 +5,9 @@ body {
     background-color: #023f88;
     font-family: 'Rokkitt', serif;
 }
+a {
+    color: #007bff;
+}
 #ticket-title, #online-ticket h2{
 	text-align: center;
 	text-transform: uppercase;
@@ -22,7 +25,6 @@ body {
 }
 #ticket-content{
     margin-top: 100px;
-    margin-bottom: 5%;
 }
 img{
 	width:100%;
@@ -37,7 +39,7 @@ img{
     background-color: #023f88;
     border-color: #023f88;
 }
-#online-ticket .card0{
+#online-ticket .card1{
 	overflow: hidden;
     position: relative;
     height: 110px;
@@ -82,6 +84,9 @@ img{
 	background-image:linear-gradient(to bottom, #f58220 50%, rgba(219,242,250,0.85) 50%);
 	background-image: -ms-linear-gradient(to bottom, #f58220 50%, rgba(219,242,250,0.85) 50%); 
 }
+.img2 #mostimg{
+        height: 151.38px;
+}
 .img3 {
 	padding: 0 10% 0 10%;
 	display: block;
@@ -90,6 +95,9 @@ img{
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #008280), color-stop(50%, rgba(219,242,250,0.85)));
 	background-image:linear-gradient(to bottom, #008280 50%, rgba(219,242,250,0.85) 50%);
 	background-image: -ms-linear-gradient(to bottom, #008280 50%, rgba(219,242,250,0.85) 50%); 
+}
+.card-img-top {
+    height: 200px;
 }
 .img img, .img2 img, .img3 img {
 	border-radius: 5%;
@@ -184,10 +192,10 @@ hr {
 }
 .img-wrap {
 	position: relative;
-    width: 160%;
+    width: 140%;
     border-radius: 5px;
     overflow: hidden;
-    float: right;
+    float: left;
     margin: auto;
 }
 .shadow {
@@ -261,8 +269,12 @@ hr {
 form , .modal-title{
     color: black;
 }
-
-
+.tab-content {
+    color: black;
+}
+.full-ticket{
+    padding-top: 30px;
+}
 
 
 

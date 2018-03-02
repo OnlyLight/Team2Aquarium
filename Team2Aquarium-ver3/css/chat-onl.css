@@ -6,10 +6,11 @@
     right: 30px;
     color: black;
     transition: .3s;
+    z-index: 9999;
 }
 
 .open{
-    bottom: 2%!important;
+    bottom: 1%!important;
 }
 
 #message {

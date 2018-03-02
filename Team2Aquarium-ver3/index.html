@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Font Google -->
     <link href="css/font-custom.css" rel="stylesheet">
+
 </head>
 
 <body ng-app="">
@@ -27,7 +28,7 @@
         <div class="row pt-5 pt-2">
             <h1 class="pl-md-5 pt-5 ml-md-5 mt-md-5 w-100 text-center text-md-left">Thế Giới<br>Đại Dương<br><small><a href="bk.html">KHÁM PHÁ NGAY +</a></small></h1>
             <div class="pl-0 col-md-10 pl-md-5 ml-md-5 mt-4 mb-md-3 text-center text-md-left"><a href="ticket.html" class="btn-custom p-2 px-md-3 py-md-2 ">MUA VÉ ONLINE &nbsp&nbsp&nbsp<i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></a></div>
-            <h6 class="w-100 text-center mt-5 pt-md-5 text-center"><a href="#"><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></a></h6>
+            <h6 class="w-100 text-center mt-5 pt-md-5 text-center"><a href="#explore" class="text-light"><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></a></h6>
         </div>
     </section>
     <section class="container-fluid p-2" id="explore">
@@ -344,57 +345,13 @@
         </div>
         <div ng-include="'common/chat_onl.html'"></div>
     </section>
-    <footer class="container-fluid p-2">
-        <div class="row no-gutters p-5">
-            <div class="col-md-3 px-md-4 pt-md-4 text-center text-md-left">
-                <img class="img-fluid mb-4" src="images/logo.png">
-                <p>Lorem ipsum dolor sit amet, sed do eiusmod tempor.
-                </p>
-            </div>
-            <div class="col-md-3 pl-md-3 pt-md-4 d-none d-md-block">
-                <h5 class="morden-style">BÀI ĐĂNG MỚI NHẤT</h5>
-                <hr class="w-25" align="left">
-                <ul class="list-unstyled pt-3">
-                    <li><a href="#">Duis aute irure dolor in reprehe.</a>
-                        <br><small>July 22, 2018</small></li>
-                    <li><a href="#">Excepteur sint occaecat.</a>
-                        <br><small>July 22, 2018</small></li>
-                    <li><a href="#">Sunt in culpa qui officia.</a>
-                        <br><small>July 22, 2018</small></li>
-                </ul>
-            </div>
-            <div class="col-md-3 pl-md-3 pt-md-4 d-none d-md-block">
-                <h5 class="morden-style">CẬP NHẬT MỚI NHẤT</h5>
-                <hr class="w-25" align="left">
-                <ul class="list-unstyled pt-3">
-                    <li><a href="#">Duis aute irure dolor in reprehe.</a>
-                        <br><small>July 22, 2018</small></li>
-                    <li><a href="#">Excepteur sint occaecat.</a>
-                        <br><small>July 22, 2018</small></li>
-                    <li><a href="#">Sunt in culpa qui officia.</a>
-                        <br><small>July 22, 2018</small></li>
-                </ul>
-            </div>
-            <div class="col-md-3 pl-md-3 pt-md-4 d-none d-md-block">
-                <h5 class="morden-style">LIÊN HỆ</h5>
-                <hr class="w-25" align="left">
-                <p class="pt-3">
-                    <i class="fa fa-mobile fa-fw" aria-hidden="true"></i> +84 163 629 7612
-                    <br><i class="fa fa-mobile fa-fw" aria-hidden="true"></i> +84 163 629 7613
-                    <br><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i> <a href="#">phongnguyenhh.1996@gmail.com</a>
-                    <br><i class="fa fa-map-marker fa-fw" aria-hidden="true"></i> 50 Yên Bái, quận Hải Châu, thành phố Đà nẵng
-                </p>
-            </div>
-        </div>
-        <div class="row no-gutters justify-content-between px-2 py-md-4" style="background-color:black;">
-            <p class="pl-md-5 pt-3">&copyBản quyền thuộc về The Berg + Team2Aquarium.</p>
-            <p class="pr-md-5 pt-3"><a class="px-2" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a class="px-2" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a class="px-2" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> <a class="px-2" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></p>
-        </div>
-    </footer>
+    <footer class="container-fluid p-2" ng-include="'common/footer.html'"></footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jQuery.scrollSpeed.js"></script>
     <script src="js/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/chat-onl.js"></script>
 </body>

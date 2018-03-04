@@ -22,6 +22,7 @@ body {
 }
 .bd{
 	width: 257%;
+	margin-left: -225px;
 
 }
 #myModal{
@@ -30,7 +31,6 @@ body {
 .hover{
 	overflow: hidden;
 	cursor: pointer;
-	border: 4px solid w;
 }
 .hover img{
 	transition: all 0.3s;

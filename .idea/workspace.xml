@@ -3,36 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c4d0af25-2245-44d5-a415-b44dd65f3b33" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/ticket.css" afterPath="$PROJECT_DIR$/css/ticket.css" />
-      <change beforePath="$PROJECT_DIR$/images/Explore.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/Sea_Nettle.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/ancv5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/aquatarifbandeau.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/audio-guide.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/avatar.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/background-header.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cash.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cb1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cheque4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/chequecult6.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/clown-fish.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/conservation-action.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/conservation-blog.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/conservation-center.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/conservation-world.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/coral.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/diver.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/gallery-of-light.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/master2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/paper-background.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/sn-facebook.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/sn-picto-insta.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/ticket.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/travellerchoices_2015.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/turtle.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/visa3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/whitetip-reef-shark.jpg" afterPath="" />
       <change beforePath="$PROJECT_DIR$/ticket.html" afterPath="$PROJECT_DIR$/ticket.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -50,8 +20,8 @@
       <file leaf-file-name="ticket.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ticket.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="7" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+            <state relative-caret-position="375">
+              <caret line="25" column="53" lean-forward="false" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -60,11 +30,9 @@
       <file leaf-file-name="ticket.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/ticket.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-              <folding>
-                <marker date="1516423326222" expanded="true" signature="39:41" ph="{...}" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,6 +76,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,7 +98,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -165,11 +133,12 @@
       <updated>1516019125544</updated>
       <workItem from="1516019128730" duration="101000" />
       <workItem from="1516422723651" duration="734000" />
+      <workItem from="1520161639133" duration="338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="835000" />
+    <option name="totallyTimeSpent" value="1173000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="722" extended-state="0" />
@@ -179,12 +148,12 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -213,11 +182,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/background-image.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/css/ticket.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ticket.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/background-image.jpg" />
     <entry file="file://$PROJECT_DIR$/images/membercard.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -230,18 +211,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/ticket.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding>
-            <marker date="1516423326222" expanded="true" signature="39:41" ph="{...}" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ticket.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="7" lean-forward="false" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        <state relative-caret-position="375">
+          <caret line="25" column="53" lean-forward="false" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
           <folding />
         </state>
       </provider>

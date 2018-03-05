@@ -21,6 +21,10 @@ header.scroll-down, header:hover{
     background-color: rgba(0, 0, 0, .6);
     border-bottom: solid 1px transparent;
 }
+header.scroll-down .py-md-3{
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+}
 #logo, header .row{
     transition: all .7s;
 }

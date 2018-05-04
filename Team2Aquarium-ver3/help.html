@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aquarium</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/chat-onl.css">
+    <link rel="stylesheet" href="css/help.css">
+    <link rel="stylesheet" href="css/home.css">
+    <!-- Angular JS -->
+    <script src="js/angular.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Font Google -->
+    <link href="css/font-custom.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Risque" rel="stylesheet">
+</head>
+<body ng-app="">
+<div class="container-fluid">
+    <header ng-include="'common/header.html'"></header>
+    <div class="row">
+        <div class="col-lg-12 banner" id="news-container">
+            <div>
+                <h3 id="title-news">HỖ TRỢ</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container magin-header">
+        <div class="row">
+            <div class="col-lg-12">
+                <!--heading-->
+                <h2 class="contact-heading">
+                    <span class="fa fa-address-book"></span>&nbsp; LIÊN HỆ
+                </h2>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 20px; margin-bottom: 20px; border: 7px">
+            <div class="col-lg-12 col-sm-12">
+                <!--map-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3088.1391475661712!2d-76.61047578471523!3d39.28509477951267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c80362e467565d%3A0xc7f0a8617c7c7e8e!2sNational+Aquarium!5e0!3m2!1svi!2s!4v1514690627767" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="row magin-content">
+            <div class="col-lg-8 form-contact">
+                <h2>Liên hệ qua Email</h2>
+                <hr>
+
+                <p>Chúng tôi đánh giá cao các nhận xét, câu hỏi và phản hồi của bạn, chúng tôi sử dụng để cải thiện trải nghiệm của bạn. Sử dụng mẫu dưới đây để gửi câu hỏi hoặc nhận xét của bạn.
+                    <br><br>* Xin lưu ý tất cả các trường là bắt buộc.</p>
+
+                <form>
+                    <div class="form-group">
+                        <label for="name">Tên của bạn:</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <input id="name" class="form-control" type="text" placeholder="Name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                            <input id="email" class="form-control" type="email" placeholder="Email">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tel">Số điện thoại của bạn:</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                            <input id="tel" class="form-control" type="number" placeholder="Phone">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mes">Message:</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-comment" aria-hidden="true"></i></span>
+                            <input id="mes" class="form-control" type="text" placeholder="Comment">
+                        </div>
+                    </div>
+
+                    <button class="btn btn-info">GỬI PHẢN HỒI
+                        <i class="glyphicon glyphicon glyphicon-ok"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="col-lg-4 form-contact">
+                <h2>Liên hệ với chúng tôi</h2>
+                <hr>
+
+                <span class="info-contact">Mailing Address</span>
+                <p>50 Yên Bái, quận Hải Châu, thành phố Đà nẵng</p>
+
+                <span class="info-contact">General Questions</span>
+                <p>410-576-3800
+                    (9 am–4:30 pm, daily)</p>
+
+                <span class="info-contact">Stranded Animal Hotline</span>
+                <p>410-576-3880</p>
+
+                <span class="info-contact">Natural Resources Police</span>
+                <p>1-800-628-9944</p>
+
+                <span class="info-contact">Membership</span>
+                <p>410-659-4230
+                    (9 am–4:30 pm, Mon.–Fri.)</p>
+
+                <span class="info-contact">Groups</span>
+                <p>410-576-3833</p>
+
+                <span class="info-contact">Facility Rentals</span>
+                <p>410-576-3847</p>
+
+                <span class="info-contact">Accessibility</span>
+                <p>410-576-8745</p>
+
+                <span class="info-contact">Media</span>
+                <p>410-986-2386</p>
+
+                <div class="social">
+                    <ul>
+                        <li id="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li id="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li id="gg"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li id="youtube"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div ng-include="'common/chat_onl.html'"></div>
+</div>
+<footer id="foot" class="container-fluid p-0" ng-include="'common/footer.html'"></footer>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jQuery.scrollSpeed.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/chat-onl.js"></script>
+</body>
+</html>

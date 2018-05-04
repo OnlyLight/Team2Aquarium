@@ -1,0 +1,91 @@
+#chat-onl {
+    position: fixed;
+    width: 320px;
+    height: 401.17px;
+    bottom: -363px;
+    right: 30px;
+    color: black;
+    transition: .3s;
+    z-index: 9999;
+}
+
+.open{
+    bottom: 1%!important;
+}
+
+#message {
+    background-color: white;
+}
+
+.contact-onl {
+    font-family: "Oswald", sans-serif;
+    width: 100%;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.info-chat .icon-chat {
+    width: 22%;
+    padding-left: 6px;
+    display: inline-block;
+}
+
+.info-chat {
+    border: 1px solid lightgray;
+}
+
+.info-chat img {
+    width: 100%;
+}
+
+.title-chat {
+    font-family: "Oswald", sans-serif;
+    display: inline-block;
+    padding-left: 6%;
+    padding-top: 1%;
+}
+
+.title-chat span {
+    font-weight: bold;
+}
+
+.chat-web p {
+    width: 100%;
+    font-family: 'Pacifico', cursive;
+    height: 220px;
+    text-align: center;
+}
+
+.chat-user {
+    width: 100%;
+    height: 50px;
+    border: 1px solid lightgray;
+}
+
+.chat-user input {
+    font-family: 'Pacifico', cursive;
+    width: 90%;
+    height: 48px;
+    border: none;
+    font-style: italic;
+    padding-left: 5px;
+}
+
+.chat-user input::placeholder {
+    color: black!important;
+}
+
+#my-input {
+    color: black;
+}
+
+.chat-user i {
+    padding-top: 15px;
+    padding-right: 8px;
+}
+
+@media (max-width: 992px) {
+    #chat-onl {
+        display: none;
+    }
+}

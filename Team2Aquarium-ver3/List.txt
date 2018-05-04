@@ -1,0 +1,19 @@
+﻿Trần Quang Duy
+Trần Văn Mỹ tranmy7021@gmail.com
+Đặng Quang Chiến quangchien220399@gmail.com
+Nguyễn Hữu Hoàng Phong phongnguyenhh.1996@gmail.com
+Thảo Nguyên nguyenbae1712@gmail.com
+
+-------------------------
+Topic: aquarium
+
+-------------------------
+Tổ chức Code
+- common: Chứa header, footer hay dùng đi dùng lại ở các trang
+- css: file css
+- JS: Angular, javascrip
+- Image: Hình ảnh
+- Data: JSON
+
+-------------------------
+4 page: 
